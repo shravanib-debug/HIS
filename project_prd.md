@@ -163,36 +163,37 @@ ML Services (Python - Microservices)
 hospital-his-ml/
 │
 ├── revenue_leakage/
-│   ├── app.py                      # Flask API for revenue ML
-│   ├── data_processor.py           # Data preprocessing
-│   ├── anomaly_detector.py         # Isolation Forest model
-│   ├── pattern_analyzer.py         # Rule-based patterns
-│   ├── alert_generator.py          # Alert generation logic
-│   ├── model_trainer.py            # Model training scripts
+│   ├── app.py                      # Flask API for revenue ML [DONE]
+│   ├── data_processor.py           # Data preprocessing [DONE]
+│   ├── anomaly_detector.py         # Isolation Forest model [DONE]
+│   ├── pattern_analyzer.py         # Rule-based patterns [DONE]
+│   ├── alert_generator.py          # Alert generation logic [DONE]
+│   ├── model_trainer.py            # Model training scripts [DONE]
 │   ├── models/
-│   │   └── isolation_forest.pkl    # Trained model
-│   ├── config.py                   # ML config
-│   └── requirements.txt
+│   │   └── isolation_forest.pkl    # Trained model (generated at runtime)
+│   ├── config.py                   # ML config [DONE]
+│   └── requirements.txt            # [DONE]
 │
 ├── predictive_analytics/
-│   ├── app.py                      # Flask API for predictions
-│   ├── time_series.py              # Prophet/ARIMA implementation
-│   ├── opd_predictor.py            # OPD rush hour prediction
-│   ├── bed_predictor.py            # Bed occupancy forecasting
-│   ├── lab_predictor.py            # Lab workload forecasting
+│   ├── app.py                      # Flask API for predictions [DONE]
+│   ├── time_series.py              # Prophet/ARIMA implementation [DONE]
+│   ├── opd_predictor.py            # OPD rush hour prediction [DONE]
+│   ├── bed_predictor.py            # Bed occupancy forecasting [DONE]
+│   ├── lab_predictor.py            # Lab workload forecasting [DONE]
 │   ├── models/
-│   │   ├── opd_prophet.pkl
-│   │   ├── bed_arima.pkl
-│   │   └── lab_prophet.pkl
-│   ├── config.py
-│   └── requirements.txt
+│   │   ├── opd_prophet.pkl         # (generated at runtime)
+│   │   ├── bed_arima.pkl           # (generated at runtime)
+│   │   └── lab_prophet.pkl         # (generated at runtime)
+│   ├── config.py                   # [DONE]
+│   └── requirements.txt            # [DONE]
 │
 ├── shared/
-│   ├── db_connector.py             # MongoDB connection
-│   └── utils.py                    # Shared utilities
+│   ├── db_connector.py             # MongoDB connection [DONE]
+│   └── utils.py                    # Shared utilities [DONE]
 │
 ├── docker-compose.yml              # Multi-service setup
 └── README.md
+
 Frontend Architecture (React.js)
 hospital-his-frontend/
 │
