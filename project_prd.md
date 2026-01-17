@@ -113,38 +113,38 @@ hospital-his-backend/
 │   └── ✅ admin.controller.js
 │
 ├── middleware/
-│   ├── auth.middleware.js          # JWT verification
-│   ├── rbac.middleware.js          # Role-based access control
-│   ├── validation.middleware.js    # Request validation
-│   ├── error.middleware.js         # Error handling
-│   ├── audit.middleware.js         # Audit logging
-│   └── upload.middleware.js        # File upload handling
+│   ├── ✅ auth.middleware.js          # JWT verification
+│   ├── ✅ rbac.middleware.js          # Role-based access control
+│   ├── ✅ validation.middleware.js    # Request validation
+│   ├── ✅ error.middleware.js         # Error handling
+│   ├── ✅ audit.middleware.js         # Audit logging
+│   └── ✅ upload.middleware.js        # File upload handling
 │
 ├── services/
-│   ├── patient.service.js          # Patient business logic
-│   ├── appointment.service.js      # Appointment scheduling
-│   ├── billing.service.js          # Billing calculations
-│   ├── insurance.service.js        # Insurance processing
-│   ├── inventory.service.js        # Stock management
-│   ├── notification.service.js     # Email/SMS/Push notifications
-│   ├── report.service.js           # Report generation
-│   ├── pdf.service.js              # PDF generation
-│   ├── excel.service.js            # Excel generation
-│   ├── socket.service.js           # Real-time updates
-│   └── ml.service.js               # ML API caller (Python bridge)
+│   ├── ✅ patient.service.js          # Patient business logic
+│   ├── ✅ appointment.service.js      # Appointment scheduling
+│   ├── ✅ billing.service.js          # Billing calculations
+│   ├── ✅ insurance.service.js        # Insurance processing
+│   ├── ✅ inventory.service.js        # Stock management
+│   ├── ✅ notification.service.js     # Email/SMS/Push notifications
+│   ├── ✅ report.service.js           # Report generation
+│   ├── ✅ pdf.service.js              # PDF generation
+│   ├── ✅ excel.service.js            # Excel generation
+│   ├── ✅ socket.service.js           # Real-time updates
+│   └── ✅ ml.service.js               # ML API caller (Python bridge)
 │
 ├── utils/
-│   ├── validators.js               # Input validators
-│   ├── helpers.js                  # Helper functions
-│   ├── encryption.js               # Password hashing
-│   ├── date.utils.js               # Date utilities
-│   ├── response.js                 # Standard API responses
-│   └── logger.js                   # Winston logger
+│   ├── ✅ validators.js               # Input validators
+│   ├── ✅ helpers.js                  # Helper functions
+│   ├── ✅ encryption.js               # Password hashing
+│   ├── ✅ date.utils.js               # Date utilities
+│   ├── ✅ response.js                 # Standard API responses
+│   └── ✅ logger.js                   # Winston logger
 │
 ├── tests/
-│   ├── unit/
-│   ├── integration/
-│   └── e2e/
+│   ├── ✅ unit/                       # Unit tests (patient, billing, validators, date)
+│   ├── ✅ integration/                # Integration tests (auth, patient APIs)
+│   └── ✅ e2e/                        # End-to-end tests (patient flow)
 │
 ├── socket/
 │   └── socket.handler.js           # Socket.io event handlers
@@ -163,36 +163,37 @@ ML Services (Python - Microservices)
 hospital-his-ml/
 │
 ├── revenue_leakage/
-│   ├── app.py                      # Flask API for revenue ML
-│   ├── data_processor.py           # Data preprocessing
-│   ├── anomaly_detector.py         # Isolation Forest model
-│   ├── pattern_analyzer.py         # Rule-based patterns
-│   ├── alert_generator.py          # Alert generation logic
-│   ├── model_trainer.py            # Model training scripts
+│   ├── app.py                      # Flask API for revenue ML [DONE]
+│   ├── data_processor.py           # Data preprocessing [DONE]
+│   ├── anomaly_detector.py         # Isolation Forest model [DONE]
+│   ├── pattern_analyzer.py         # Rule-based patterns [DONE]
+│   ├── alert_generator.py          # Alert generation logic [DONE]
+│   ├── model_trainer.py            # Model training scripts [DONE]
 │   ├── models/
-│   │   └── isolation_forest.pkl    # Trained model
-│   ├── config.py                   # ML config
-│   └── requirements.txt
+│   │   └── isolation_forest.pkl    # Trained model (generated at runtime)
+│   ├── config.py                   # ML config [DONE]
+│   └── requirements.txt            # [DONE]
 │
 ├── predictive_analytics/
-│   ├── app.py                      # Flask API for predictions
-│   ├── time_series.py              # Prophet/ARIMA implementation
-│   ├── opd_predictor.py            # OPD rush hour prediction
-│   ├── bed_predictor.py            # Bed occupancy forecasting
-│   ├── lab_predictor.py            # Lab workload forecasting
+│   ├── app.py                      # Flask API for predictions [DONE]
+│   ├── time_series.py              # Prophet/ARIMA implementation [DONE]
+│   ├── opd_predictor.py            # OPD rush hour prediction [DONE]
+│   ├── bed_predictor.py            # Bed occupancy forecasting [DONE]
+│   ├── lab_predictor.py            # Lab workload forecasting [DONE]
 │   ├── models/
-│   │   ├── opd_prophet.pkl
-│   │   ├── bed_arima.pkl
-│   │   └── lab_prophet.pkl
-│   ├── config.py
-│   └── requirements.txt
+│   │   ├── opd_prophet.pkl         # (generated at runtime)
+│   │   ├── bed_arima.pkl           # (generated at runtime)
+│   │   └── lab_prophet.pkl         # (generated at runtime)
+│   ├── config.py                   # [DONE]
+│   └── requirements.txt            # [DONE]
 │
 ├── shared/
-│   ├── db_connector.py             # MongoDB connection
-│   └── utils.py                    # Shared utilities
+│   ├── db_connector.py             # MongoDB connection [DONE]
+│   └── utils.py                    # Shared utilities [DONE]
 │
 ├── docker-compose.yml              # Multi-service setup
 └── README.md
+
 Frontend Architecture (React.js)
 hospital-his-frontend/
 │
