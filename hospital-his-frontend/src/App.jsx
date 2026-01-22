@@ -13,7 +13,9 @@ import Laboratory from './pages/dashboard/Laboratory';
 import Radiology from './pages/dashboard/Radiology';
 import Pharmacy from './pages/dashboard/Pharmacy';
 import Billing from './pages/dashboard/Billing';
+import Insurance from './pages/dashboard/Insurance';
 import OperationTheatre from './pages/dashboard/OperationTheatre';
+import Admin from './pages/dashboard/Admin';
 import DashboardLayout from './layouts/DashboardLayout';
 import { Provider } from 'react-redux';
 import { store } from './store/store';
@@ -40,7 +42,9 @@ function App() {
             <Route path="lab" element={<Laboratory />} />
             <Route path="radiology" element={<Radiology />} />
             <Route path="billing" element={<Billing />} />
+            <Route path="insurance" element={<Insurance />} />
             <Route path="ot" element={<OperationTheatre />} />
+            <Route path="admin" element={<Admin />} />
 
             {/* Future routes will be nested here */}
             {/* <Route path="patients" element={<Patients />} /> */}

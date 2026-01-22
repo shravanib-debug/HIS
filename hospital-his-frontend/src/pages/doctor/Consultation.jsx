@@ -4,10 +4,10 @@ import { motion } from 'framer-motion';
 import { ArrowLeft, User, Calendar, Activity, Save, Plus, Trash, Pill, FileText, FlaskConical } from 'lucide-react';
 import axios from 'axios'; // We'll use axios directly for this complex form for now, or move to service later
 
-const API_RES_URL = 'http://localhost:5000/api/v1/';
+const API_RES_URL = 'http://localhost:5001/api/v1/';
 const getConfig = () => {
     const user = JSON.parse(localStorage.getItem('user'));
-    return user && user.token ? { headers: { Authorization: `Bearer ${user.token}` } } : {};
+    return { headers: { Authorization: `Bearer ${user?.token}` } };
 };
 
 const Consultation = () => {

@@ -274,7 +274,7 @@ const PatientDetails = () => {
                                 {selectedLabResult.reportPdf && (
                                     <div className="flex gap-2 mb-4">
                                         <a
-                                            href={`http://localhost:5000/${selectedLabResult.reportPdf.replace(/\\/g, '/')}`}
+                                            href={`http://localhost:5001/${selectedLabResult.reportPdf.replace(/\\\\/g, '/')}`}
                                             target="_blank"
                                             rel="noopener noreferrer"
                                             className="px-4 py-2 bg-blue-500 text-white text-sm font-medium rounded-lg hover:bg-blue-600 flex items-center gap-2"
