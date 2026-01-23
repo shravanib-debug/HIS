@@ -20,16 +20,20 @@ const VendorForm = () => {
     const [formData, setFormData] = useState({
         vendorCode: '',
         vendorName: '',
+        vendorType: 'general',
         contactPerson: '',
         email: '',
         phone: '',
-        address: '',
+        street: '',
+        city: '',
+        state: '',
+        pincode: '',
         gstNumber: '',
         panNumber: '',
         bankName: '',
         bankAccount: '',
         ifscCode: '',
-        paymentTerms: '30',
+        paymentTerms: 'credit-30',
         notes: '',
     });
 
@@ -48,16 +52,20 @@ const VendorForm = () => {
                 setFormData({
                     vendorCode: vendor.vendorCode || '',
                     vendorName: vendor.vendorName || '',
+                    vendorType: vendor.vendorType || 'general',
                     contactPerson: vendor.contactPerson || '',
                     email: vendor.email || '',
                     phone: vendor.phone || '',
-                    address: vendor.address || '',
+                    street: vendor.address?.street || '',
+                    city: vendor.address?.city || '',
+                    state: vendor.address?.state || '',
+                    pincode: vendor.address?.pincode || '',
                     gstNumber: vendor.gstNumber || '',
                     panNumber: vendor.panNumber || '',
                     bankName: vendor.bankDetails?.bankName || '',
                     bankAccount: vendor.bankDetails?.accountNumber || '',
                     ifscCode: vendor.bankDetails?.ifscCode || '',
-                    paymentTerms: vendor.paymentTerms || '30',
+                    paymentTerms: vendor.paymentTerms || 'credit-30',
                     notes: vendor.notes || '',
                 });
             }
@@ -87,10 +95,16 @@ const VendorForm = () => {
             const dataToSend = {
                 vendorCode: formData.vendorCode,
                 vendorName: formData.vendorName,
+                vendorType: formData.vendorType,
                 contactPerson: formData.contactPerson,
                 email: formData.email,
                 phone: formData.phone,
-                address: formData.address,
+                address: {
+                    street: formData.street,
+                    city: formData.city,
+                    state: formData.state,
+                    pincode: formData.pincode,
+                },
                 gstNumber: formData.gstNumber,
                 panNumber: formData.panNumber,
                 bankDetails: {
@@ -98,7 +112,7 @@ const VendorForm = () => {
                     accountNumber: formData.bankAccount,
                     ifscCode: formData.ifscCode,
                 },
-                paymentTerms: parseInt(formData.paymentTerms) || 30,
+                paymentTerms: formData.paymentTerms,
                 notes: formData.notes,
             };
 
@@ -146,6 +160,16 @@ const VendorForm = () => {
                             <input name="vendorName" value={formData.vendorName} onChange={handleChange} required />
                         </div>
                         <div className="form-group">
+                            <label>Vendor Type *</label>
+                            <select name="vendorType" value={formData.vendorType} onChange={handleChange} required>
+                                <option value="equipment">Equipment</option>
+                                <option value="consumables">Consumables</option>
+                                <option value="general">General</option>
+                                <option value="services">Services</option>
+                                <option value="mixed">Mixed</option>
+                            </select>
+                        </div>
+                        <div className="form-group">
                             <label>Contact Person</label>
                             <input name="contactPerson" value={formData.contactPerson} onChange={handleChange} />
                         </div>
@@ -157,9 +181,27 @@ const VendorForm = () => {
                             <label>Email</label>
                             <input name="email" type="email" value={formData.email} onChange={handleChange} />
                         </div>
+                    </div>
+                </section>
+
+                <section className="form-section">
+                    <h2>Address</h2>
+                    <div className="form-grid">
                         <div className="form-group full-width">
-                            <label>Address</label>
-                            <textarea name="address" value={formData.address} onChange={handleChange} rows="2" />
+                            <label>Street</label>
+                            <input name="street" value={formData.street} onChange={handleChange} placeholder="Street address" />
+                        </div>
+                        <div className="form-group">
+                            <label>City</label>
+                            <input name="city" value={formData.city} onChange={handleChange} />
+                        </div>
+                        <div className="form-group">
+                            <label>State</label>
+                            <input name="state" value={formData.state} onChange={handleChange} />
+                        </div>
+                        <div className="form-group">
+                            <label>Pincode</label>
+                            <input name="pincode" value={formData.pincode} onChange={handleChange} />
                         </div>
                     </div>
                 </section>
@@ -194,8 +236,16 @@ const VendorForm = () => {
                             <input name="ifscCode" value={formData.ifscCode} onChange={handleChange} />
                         </div>
                         <div className="form-group">
-                            <label>Payment Terms (Days)</label>
-                            <input name="paymentTerms" type="number" value={formData.paymentTerms} onChange={handleChange} />
+                            <label>Payment Terms</label>
+                            <select name="paymentTerms" value={formData.paymentTerms} onChange={handleChange}>
+                                <option value="advance">Advance</option>
+                                <option value="cod">Cash on Delivery</option>
+                                <option value="credit-7">Credit - 7 Days</option>
+                                <option value="credit-15">Credit - 15 Days</option>
+                                <option value="credit-30">Credit - 30 Days</option>
+                                <option value="credit-45">Credit - 45 Days</option>
+                                <option value="credit-60">Credit - 60 Days</option>
+                            </select>
                         </div>
                     </div>
                 </section>

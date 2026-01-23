@@ -89,11 +89,12 @@ const PurchaseOrderForm = () => {
                 vendor: formData.vendor,
                 deliveryLocation: formData.deliveryLocation || undefined,
                 expectedDeliveryDate: formData.expectedDeliveryDate || undefined,
-                remarks: formData.remarks,
+                notes: formData.remarks,
                 items: formData.items.filter(i => i.item).map(i => ({
                     item: i.item,
-                    orderedQuantity: i.quantity,
-                    unitPrice: i.unitPrice
+                    quantity: i.quantity,
+                    rate: i.unitPrice,
+                    amount: i.quantity * i.unitPrice
                 }))
             };
             await inventoryManagerService.createPurchaseOrder(dataToSend);

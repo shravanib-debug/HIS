@@ -107,11 +107,11 @@ const PurchaseOrderList = () => {
                                     </td>
                                     <td className="actions">
                                         <button className="action-btn view" onClick={() => navigate(`/inventory/purchase-orders/${po._id}`)}>👁</button>
-                                        {po.status === 'pending_approval' && (
-                                            <button className="action-btn approve" onClick={() => handleApprove(po._id)}>✅</button>
+                                        {(po.status === 'pending_approval' || po.status === 'draft') && (
+                                            <button className="action-btn approve" onClick={() => handleApprove(po._id)} title="Approve">✅</button>
                                         )}
                                         {po.status === 'approved' && (
-                                            <button className="action-btn grn" onClick={() => navigate(`/inventory/grns/new?po=${po._id}`)}>📥</button>
+                                            <button className="action-btn grn" onClick={() => navigate(`/inventory/grns/new?po=${po._id}`)} title="Receive Goods">📥</button>
                                         )}
                                     </td>
                                 </tr>

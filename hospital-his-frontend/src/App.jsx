@@ -46,14 +46,18 @@ import {
   InventoryDashboard,
   ItemMaster,
   ItemForm,
+  ItemAuditLog,
   VendorList,
   VendorForm,
   PurchaseOrderList,
   PurchaseOrderForm,
   GRNList,
+  GRNForm,
   StockLevels,
   StockIssueList,
+  StockIssueForm,
   StockTransferList,
+  StockTransferForm,
   PlaceholderPage
 } from './pages/inventory';
 
@@ -66,7 +70,7 @@ function App() {
           <Route path="/" element={<Landing />} />
           <Route path="/login" element={<Login />} />
 
-          {/* Clinical Dashboard Routes - STRICTLY NON-ADMIN */}
+          {/* Clinical Dashboard Routes */}
           <Route path="/dashboard" element={
             <ClinicalGuard>
               <DashboardLayout />
@@ -93,7 +97,7 @@ function App() {
             <Route path="duty-roster" element={<NurseDutyRoster />} />
           </Route>
 
-          {/* Admin Routes - Shared Layout with Admin Sidebar */}
+          {/* Admin Routes */}
           <Route path="/admin" element={
             <AdminGuard>
               <DashboardLayout />
@@ -111,7 +115,7 @@ function App() {
             <Route path="system" element={<SystemHealth />} />
           </Route>
 
-          {/* Inventory Manager Routes - INVENTORY_MANAGER ROLE ONLY */}
+          {/* Inventory Manager Routes */}
           <Route path="/inventory" element={
             <InventoryGuard>
               <DashboardLayout />
@@ -123,37 +127,33 @@ function App() {
             <Route path="items/new" element={<ItemForm />} />
             <Route path="items/:id" element={<ItemForm />} />
             <Route path="items/:id/edit" element={<ItemForm />} />
-            <Route path="items/:id/audit" element={<PlaceholderPage />} />
+            <Route path="items/:id/audit" element={<ItemAuditLog />} />
             {/* Vendors */}
             <Route path="vendors" element={<VendorList />} />
             <Route path="vendors/new" element={<VendorForm />} />
             <Route path="vendors/:id" element={<VendorForm />} />
             <Route path="vendors/:id/edit" element={<VendorForm />} />
-            {/* Purchase Requisitions */}
-            <Route path="purchase-requisitions" element={<PlaceholderPage />} />
-            <Route path="purchase-requisitions/*" element={<PlaceholderPage />} />
             {/* Purchase Orders */}
+            <Route path="purchase-requisitions" element={<PlaceholderPage />} />
             <Route path="purchase-orders" element={<PurchaseOrderList />} />
             <Route path="purchase-orders/new" element={<PurchaseOrderForm />} />
             <Route path="purchase-orders/:id" element={<PlaceholderPage />} />
             {/* GRN */}
             <Route path="grns" element={<GRNList />} />
-            <Route path="grns/new" element={<PlaceholderPage />} />
+            <Route path="grns/new" element={<GRNForm />} />
             {/* Stock Operations */}
             <Route path="stock/levels" element={<StockLevels />} />
             <Route path="stock/low-stock" element={<StockLevels />} />
             <Route path="stock/near-expiry" element={<StockLevels />} />
             <Route path="stock/expired" element={<StockLevels />} />
             <Route path="stock-issues" element={<StockIssueList />} />
-            <Route path="stock-issues/new" element={<PlaceholderPage />} />
-            <Route path="stock-returns" element={<PlaceholderPage />} />
-            <Route path="stock-returns/*" element={<PlaceholderPage />} />
+            <Route path="stock-issues/new" element={<StockIssueForm />} />
             <Route path="stock-transfers" element={<StockTransferList />} />
-            <Route path="stock-transfers/new" element={<PlaceholderPage />} />
-            {/* Recalls & Audit */}
-            <Route path="recalls" element={<PlaceholderPage />} />
-            <Route path="recalls/*" element={<PlaceholderPage />} />
+            <Route path="stock-transfers/new" element={<StockTransferForm />} />
+            <Route path="stock-returns" element={<PlaceholderPage />} />
+            {/* Audit */}
             <Route path="audit" element={<PlaceholderPage />} />
+            <Route path="recalls" element={<PlaceholderPage />} />
           </Route>
 
           {/* Fallback */}

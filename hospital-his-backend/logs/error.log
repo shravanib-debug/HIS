@@ -4063,3 +4063,69 @@ ValidationError: InventoryItem validation failed: specifications: Cast to Map fa
     at Array.map (<anonymous>)
     at Function.create (D:\HIS Quasar 4 - Copy\HIS_Quasar\hospital-his-backend\node_modules\mongoose\lib\model.js:2906:30)
     at D:\HIS Quasar 4 - Copy\HIS_Quasar\hospital-his-backend\controllers\inventoryManager.controller.js:93:38
+2026-01-23 11:17:10 [ERROR]: Error connecting to MongoDB: querySrv ESERVFAIL _mongodb._tcp.cluster2.fs2fnzl.mongodb.net
+2026-01-23 11:18:39 [ERROR]: Error connecting to MongoDB: querySrv ESERVFAIL _mongodb._tcp.cluster2.fs2fnzl.mongodb.net
+2026-01-23 11:23:42 [ERROR]: Error connecting to MongoDB: querySrv ESERVFAIL _mongodb._tcp.cluster2.fs2fnzl.mongodb.net
+2026-01-23 11:30:12 [ERROR]: Error connecting to MongoDB: querySrv ESERVFAIL _mongodb._tcp.cluster2.fs2fnzl.mongodb.net
+2026-01-23 11:35:48 [ERROR]: Error connecting to MongoDB: querySrv ESERVFAIL _mongodb._tcp.cluster2.fs2fnzl.mongodb.net
+2026-01-23 11:42:20 [ERROR]: PurchaseOrder validation failed: poNumber: Path `poNumber` is required., items.0.amount: Path `amount` is required., items.0.rate: Path `rate` is required., items.0.quantity: Path `quantity` is required.
+ValidationError: PurchaseOrder validation failed: poNumber: Path `poNumber` is required., items.0.amount: Path `amount` is required., items.0.rate: Path `rate` is required., items.0.quantity: Path `quantity` is required.
+    at Document.invalidate (D:\HIS Quasar 4 - Copy\HIS_Quasar\hospital-his-backend\node_modules\mongoose\lib\document.js:3221:32)
+    at D:\HIS Quasar 4 - Copy\HIS_Quasar\hospital-his-backend\node_modules\mongoose\lib\document.js:3014:17
+    at D:\HIS Quasar 4 - Copy\HIS_Quasar\hospital-his-backend\node_modules\mongoose\lib\schematype.js:1368:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:85:11)
+2026-01-23 11:46:58 [ERROR]: PurchaseOrder validation failed: poNumber: Path `poNumber` is required.
+ValidationError: PurchaseOrder validation failed: poNumber: Path `poNumber` is required.
+    at Document.invalidate (D:\HIS Quasar 4 - Copy\HIS_Quasar\hospital-his-backend\node_modules\mongoose\lib\document.js:3221:32)
+    at D:\HIS Quasar 4 - Copy\HIS_Quasar\hospital-his-backend\node_modules\mongoose\lib\document.js:3014:17
+    at D:\HIS Quasar 4 - Copy\HIS_Quasar\hospital-his-backend\node_modules\mongoose\lib\schematype.js:1368:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:85:11)
+2026-01-23 11:47:19 [ERROR]: PurchaseOrder validation failed: poNumber: Path `poNumber` is required.
+ValidationError: PurchaseOrder validation failed: poNumber: Path `poNumber` is required.
+    at Document.invalidate (D:\HIS Quasar 4 - Copy\HIS_Quasar\hospital-his-backend\node_modules\mongoose\lib\document.js:3221:32)
+    at D:\HIS Quasar 4 - Copy\HIS_Quasar\hospital-his-backend\node_modules\mongoose\lib\document.js:3014:17
+    at D:\HIS Quasar 4 - Copy\HIS_Quasar\hospital-his-backend\node_modules\mongoose\lib\schematype.js:1368:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:85:11)
+2026-01-23 11:50:13 [ERROR]: StockIssue validation failed: issuingLocation: Issuing location is required, requestingDepartment: Requesting department is required, issueNumber: Path `issueNumber` is required.
+ValidationError: StockIssue validation failed: issuingLocation: Issuing location is required, requestingDepartment: Requesting department is required, issueNumber: Path `issueNumber` is required.
+    at Document.invalidate (D:\HIS Quasar 4 - Copy\HIS_Quasar\hospital-his-backend\node_modules\mongoose\lib\document.js:3221:32)
+    at D:\HIS Quasar 4 - Copy\HIS_Quasar\hospital-his-backend\node_modules\mongoose\lib\document.js:3014:17
+    at D:\HIS Quasar 4 - Copy\HIS_Quasar\hospital-his-backend\node_modules\mongoose\lib\schematype.js:1368:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:85:11)
+2026-01-23 11:55:09 [ERROR]: StockIssue validation failed: issuingLocation: Issuing location is required, requestingDepartment: Requesting department is required, issueNumber: Path `issueNumber` is required.
+ValidationError: StockIssue validation failed: issuingLocation: Issuing location is required, requestingDepartment: Requesting department is required, issueNumber: Path `issueNumber` is required.
+    at Document.invalidate (D:\HIS Quasar 4 - Copy\HIS_Quasar\hospital-his-backend\node_modules\mongoose\lib\document.js:3221:32)
+    at D:\HIS Quasar 4 - Copy\HIS_Quasar\hospital-his-backend\node_modules\mongoose\lib\document.js:3014:17
+    at D:\HIS Quasar 4 - Copy\HIS_Quasar\hospital-his-backend\node_modules\mongoose\lib\schematype.js:1368:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:85:11)
+2026-01-23 12:00:14 [ERROR]: Error connecting to MongoDB: querySrv ETIMEOUT _mongodb._tcp.cluster2.fs2fnzl.mongodb.net
+2026-01-23 12:05:06 [ERROR]: Item validation failed: Stock record not found
+Error: Item validation failed: Stock record not found
+    at D:\HIS Quasar 4 - Copy\HIS_Quasar\hospital-his-backend\controllers\inventoryManager.controller.js:660:25
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2026-01-23 12:06:13 [ERROR]: Item validation failed: Stock record not found
+Error: Item validation failed: Stock record not found
+    at D:\HIS Quasar 4 - Copy\HIS_Quasar\hospital-his-backend\controllers\inventoryManager.controller.js:660:25
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2026-01-23 12:12:17 [ERROR]: Only pending POs can be approved
+Error: Only pending POs can be approved
+    at D:\HIS Quasar 4 - Copy\HIS_Quasar\hospital-his-backend\controllers\inventoryManager.controller.js:416:21
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2026-01-23 12:12:56 [ERROR]: Only pending POs can be approved
+Error: Only pending POs can be approved
+    at D:\HIS Quasar 4 - Copy\HIS_Quasar\hospital-his-backend\controllers\inventoryManager.controller.js:416:21
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2026-01-23 12:22:56 [ERROR]: GRN validation failed: receivingLocation: Path `receivingLocation` is required., vendor: Path `vendor` is required., grnNumber: Path `grnNumber` is required., items.0.amount: Path `amount` is required., items.0.rate: Path `rate` is required., items.0.acceptedQuantity: Path `acceptedQuantity` is required., items.0.orderedQuantity: Path `orderedQuantity` is required.
+ValidationError: GRN validation failed: receivingLocation: Path `receivingLocation` is required., vendor: Path `vendor` is required., grnNumber: Path `grnNumber` is required., items.0.amount: Path `amount` is required., items.0.rate: Path `rate` is required., items.0.acceptedQuantity: Path `acceptedQuantity` is required., items.0.orderedQuantity: Path `orderedQuantity` is required.
+    at Document.invalidate (D:\HIS Quasar 4 - Copy\HIS_Quasar\hospital-his-backend\node_modules\mongoose\lib\document.js:3221:32)
+    at D:\HIS Quasar 4 - Copy\HIS_Quasar\hospital-his-backend\node_modules\mongoose\lib\document.js:3014:17
+    at D:\HIS Quasar 4 - Copy\HIS_Quasar\hospital-his-backend\node_modules\mongoose\lib\schematype.js:1368:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:85:11)
+2026-01-23 12:27:02 [ERROR]: Item validation failed: Stock record not found
+Error: Item validation failed: Stock record not found
+    at D:\HIS Quasar 4 - Copy\HIS_Quasar\hospital-his-backend\controllers\inventoryManager.controller.js:661:25
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2026-01-23 12:27:44 [ERROR]: Item validation failed: Stock record not found
+Error: Item validation failed: Stock record not found
+    at D:\HIS Quasar 4 - Copy\HIS_Quasar\hospital-his-backend\controllers\inventoryManager.controller.js:661:25
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)

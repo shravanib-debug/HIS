@@ -412,8 +412,9 @@ exports.approvePurchaseOrder = asyncHandler(async (req, res, next) => {
         return next(new ErrorResponse('Purchase Order not found', 404));
     }
 
-    if (po.status !== PURCHASE_ORDER_STATUS.PENDING) {
-        return next(new ErrorResponse('Only pending POs can be approved', 400));
+    // Allow approving DRAFT or PENDING POs
+    if (po.status !== PURCHASE_ORDER_STATUS.PENDING && po.status !== PURCHASE_ORDER_STATUS.DRAFT) {
+        return next(new ErrorResponse('Only draft or pending POs can be approved', 400));
     }
 
     po.status = PURCHASE_ORDER_STATUS.APPROVED;
