@@ -26,7 +26,6 @@ import { Provider } from 'react-redux';
 import { store } from './store/store';
 
 // Admin Module Imports
-
 import AdminDashboard from './pages/admin/AdminDashboard';
 import UserManagement from './pages/admin/UserManagement';
 import BreakGlassManagement from './pages/admin/BreakGlassManagement';
@@ -40,6 +39,23 @@ import SystemHealth from './pages/admin/SystemHealth';
 
 import AdminGuard from './components/guards/AdminGuard';
 import ClinicalGuard from './components/guards/ClinicalGuard';
+import InventoryGuard from './components/guards/InventoryGuard';
+
+// Inventory Manager Imports
+import {
+  InventoryDashboard,
+  ItemMaster,
+  ItemForm,
+  VendorList,
+  VendorForm,
+  PurchaseOrderList,
+  PurchaseOrderForm,
+  GRNList,
+  StockLevels,
+  StockIssueList,
+  StockTransferList,
+  PlaceholderPage
+} from './pages/inventory';
 
 function App() {
   return (
@@ -95,6 +111,51 @@ function App() {
             <Route path="system" element={<SystemHealth />} />
           </Route>
 
+          {/* Inventory Manager Routes - INVENTORY_MANAGER ROLE ONLY */}
+          <Route path="/inventory" element={
+            <InventoryGuard>
+              <DashboardLayout />
+            </InventoryGuard>
+          }>
+            <Route index element={<InventoryDashboard />} />
+            {/* Items */}
+            <Route path="items" element={<ItemMaster />} />
+            <Route path="items/new" element={<ItemForm />} />
+            <Route path="items/:id" element={<ItemForm />} />
+            <Route path="items/:id/edit" element={<ItemForm />} />
+            <Route path="items/:id/audit" element={<PlaceholderPage />} />
+            {/* Vendors */}
+            <Route path="vendors" element={<VendorList />} />
+            <Route path="vendors/new" element={<VendorForm />} />
+            <Route path="vendors/:id" element={<VendorForm />} />
+            <Route path="vendors/:id/edit" element={<VendorForm />} />
+            {/* Purchase Requisitions */}
+            <Route path="purchase-requisitions" element={<PlaceholderPage />} />
+            <Route path="purchase-requisitions/*" element={<PlaceholderPage />} />
+            {/* Purchase Orders */}
+            <Route path="purchase-orders" element={<PurchaseOrderList />} />
+            <Route path="purchase-orders/new" element={<PurchaseOrderForm />} />
+            <Route path="purchase-orders/:id" element={<PlaceholderPage />} />
+            {/* GRN */}
+            <Route path="grns" element={<GRNList />} />
+            <Route path="grns/new" element={<PlaceholderPage />} />
+            {/* Stock Operations */}
+            <Route path="stock/levels" element={<StockLevels />} />
+            <Route path="stock/low-stock" element={<StockLevels />} />
+            <Route path="stock/near-expiry" element={<StockLevels />} />
+            <Route path="stock/expired" element={<StockLevels />} />
+            <Route path="stock-issues" element={<StockIssueList />} />
+            <Route path="stock-issues/new" element={<PlaceholderPage />} />
+            <Route path="stock-returns" element={<PlaceholderPage />} />
+            <Route path="stock-returns/*" element={<PlaceholderPage />} />
+            <Route path="stock-transfers" element={<StockTransferList />} />
+            <Route path="stock-transfers/new" element={<PlaceholderPage />} />
+            {/* Recalls & Audit */}
+            <Route path="recalls" element={<PlaceholderPage />} />
+            <Route path="recalls/*" element={<PlaceholderPage />} />
+            <Route path="audit" element={<PlaceholderPage />} />
+          </Route>
+
           {/* Fallback */}
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
@@ -104,4 +165,3 @@ function App() {
 }
 
 export default App;
-

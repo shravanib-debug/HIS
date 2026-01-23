@@ -16,6 +16,7 @@ const USER_ROLES = {
     INSURANCE: 'insurance',
     COMPLIANCE: 'compliance',
     HEAD_NURSE: 'head_nurse',
+    INVENTORY_MANAGER: 'inventory_manager',
 };
 
 // Appointment Status
@@ -106,12 +107,67 @@ const BED_TYPES = {
     NICU: 'nicu',
 };
 
-// Inventory Status
+// Inventory Status (for items)
 const INVENTORY_STATUS = {
     AVAILABLE: 'available',
     LOW_STOCK: 'low-stock',
     OUT_OF_STOCK: 'out-of-stock',
     EXPIRED: 'expired',
+    BLOCKED: 'blocked',
+    QUARANTINED: 'quarantined',
+};
+
+// Purchase Order Status
+const PURCHASE_ORDER_STATUS = {
+    DRAFT: 'draft',
+    PENDING: 'pending',
+    APPROVED: 'approved',
+    ORDERED: 'ordered',
+    PARTIAL: 'partial',
+    CLOSED: 'closed',
+    CANCELLED: 'cancelled',
+};
+
+// Purchase Requisition Status
+const PURCHASE_REQUISITION_STATUS = {
+    DRAFT: 'draft',
+    SUBMITTED: 'submitted',
+    APPROVED: 'approved',
+    REJECTED: 'rejected',
+    CONVERTED: 'converted',
+};
+
+// Stock Issue Status
+const STOCK_ISSUE_STATUS = {
+    PENDING: 'pending',
+    APPROVED: 'approved',
+    ISSUED: 'issued',
+    REJECTED: 'rejected',
+    CANCELLED: 'cancelled',
+};
+
+// Stock Transfer Status
+const STOCK_TRANSFER_STATUS = {
+    PENDING: 'pending',
+    APPROVED: 'approved',
+    IN_TRANSIT: 'in-transit',
+    RECEIVED: 'received',
+    CANCELLED: 'cancelled',
+};
+
+// Stock Return Status
+const STOCK_RETURN_STATUS = {
+    PENDING: 'pending',
+    ACCEPTED: 'accepted',
+    REJECTED: 'rejected',
+};
+
+// Inventory Recall Status
+const INVENTORY_RECALL_STATUS = {
+    ACTIVE: 'active',
+    IN_PROGRESS: 'in-progress',
+    COMPLETED: 'completed',
+    CANCELLED: 'cancelled',
 };
 
 // AI Anomaly Types
@@ -227,6 +283,12 @@ module.exports = {
     BED_STATUS,
     BED_TYPES,
     INVENTORY_STATUS,
+    PURCHASE_ORDER_STATUS,
+    PURCHASE_REQUISITION_STATUS,
+    STOCK_ISSUE_STATUS,
+    STOCK_TRANSFER_STATUS,
+    STOCK_RETURN_STATUS,
+    INVENTORY_RECALL_STATUS,
     AI_ANOMALY_TYPES,
     AI_ANOMALY_STATUS,
     AI_PREDICTION_TYPES,

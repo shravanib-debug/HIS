@@ -9509,3 +9509,97 @@ Error: User role 'receptionist' is not authorized to access this route
 2026-01-22 18:58:53 [INFO]: Client disconnected: s8nOtwhdbTySNzuDAAAO
 2026-01-22 19:15:28 [WARN]: MongoDB disconnected. Attempting to reconnect...
 2026-01-22 21:03:55 [INFO]: MongoDB reconnected
+2026-01-23 02:46:09 [INFO]: MongoDB Connected: ac-3nlnfep-shard-00-00.fs2fnzl.mongodb.net
+2026-01-23 02:46:09 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-23 02:46:09 [INFO]:        HOSPITAL INFORMATION SYSTEM (HIS) BACKEND SERVER        
+2026-01-23 02:46:09 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-23 02:46:09 [INFO]: 🚀 Server running in development mode on port 5001
+2026-01-23 02:46:09 [INFO]: 📡 API Base URL: http://localhost:5001/api/v1
+2026-01-23 02:46:09 [INFO]: 🔌 WebSocket enabled
+2026-01-23 02:46:09 [INFO]: 📋 Health check: http://localhost:5001/api/health
+2026-01-23 02:46:09 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-23 02:54:34 [INFO]: MongoDB Connected: ac-3nlnfep-shard-00-01.fs2fnzl.mongodb.net
+2026-01-23 02:54:34 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-23 02:54:34 [INFO]:        HOSPITAL INFORMATION SYSTEM (HIS) BACKEND SERVER        
+2026-01-23 02:54:34 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-23 02:54:34 [INFO]: 🚀 Server running in development mode on port 5001
+2026-01-23 02:54:34 [INFO]: 📡 API Base URL: http://localhost:5001/api/v1
+2026-01-23 02:54:34 [INFO]: 🔌 WebSocket enabled
+2026-01-23 02:54:34 [INFO]: 📋 Health check: http://localhost:5001/api/health
+2026-01-23 02:54:34 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-23 02:58:11 [INFO]: MongoDB Connected: ac-3nlnfep-shard-00-02.fs2fnzl.mongodb.net
+2026-01-23 02:58:11 [WARN]: MongoDB disconnected. Attempting to reconnect...
+2026-01-23 03:12:47 [ERROR]: InventoryItem validation failed: category: Category is required
+ValidationError: InventoryItem validation failed: category: Category is required
+    at Document.invalidate (D:\HIS Quasar 4 - Copy\HIS_Quasar\hospital-his-backend\node_modules\mongoose\lib\document.js:3221:32)
+    at D:\HIS Quasar 4 - Copy\HIS_Quasar\hospital-his-backend\node_modules\mongoose\lib\document.js:3014:17
+    at D:\HIS Quasar 4 - Copy\HIS_Quasar\hospital-his-backend\node_modules\mongoose\lib\schematype.js:1368:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:85:11)
+2026-01-23 03:13:44 [INFO]: MongoDB Connected: ac-3nlnfep-shard-00-02.fs2fnzl.mongodb.net
+2026-01-23 03:13:44 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-23 03:13:44 [INFO]:        HOSPITAL INFORMATION SYSTEM (HIS) BACKEND SERVER        
+2026-01-23 03:13:44 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-23 03:13:44 [INFO]: 🚀 Server running in development mode on port 5001
+2026-01-23 03:13:44 [INFO]: 📡 API Base URL: http://localhost:5001/api/v1
+2026-01-23 03:13:44 [INFO]: 🔌 WebSocket enabled
+2026-01-23 03:13:44 [INFO]: 📋 Health check: http://localhost:5001/api/health
+2026-01-23 03:13:44 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-23 03:14:12 [INFO]: MongoDB Connected: ac-3nlnfep-shard-00-00.fs2fnzl.mongodb.net
+2026-01-23 03:14:13 [WARN]: MongoDB disconnected. Attempting to reconnect...
+2026-01-23 03:15:10 [ERROR]: AuditLog validation failed: action: `CREATE` is not a valid enum value for path `action`.
+ValidationError: AuditLog validation failed: action: `CREATE` is not a valid enum value for path `action`.
+    at Document.invalidate (D:\HIS Quasar 4 - Copy\HIS_Quasar\hospital-his-backend\node_modules\mongoose\lib\document.js:3221:32)
+    at D:\HIS Quasar 4 - Copy\HIS_Quasar\hospital-his-backend\node_modules\mongoose\lib\document.js:3014:17
+    at D:\HIS Quasar 4 - Copy\HIS_Quasar\hospital-his-backend\node_modules\mongoose\lib\schematype.js:1368:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:85:11)
+2026-01-23 03:20:34 [INFO]: MongoDB Connected: ac-3nlnfep-shard-00-01.fs2fnzl.mongodb.net
+2026-01-23 03:20:34 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-23 03:20:34 [INFO]:        HOSPITAL INFORMATION SYSTEM (HIS) BACKEND SERVER        
+2026-01-23 03:20:34 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-23 03:20:34 [INFO]: 🚀 Server running in development mode on port 5001
+2026-01-23 03:20:34 [INFO]: 📡 API Base URL: http://localhost:5001/api/v1
+2026-01-23 03:20:34 [INFO]: 🔌 WebSocket enabled
+2026-01-23 03:20:34 [INFO]: 📋 Health check: http://localhost:5001/api/health
+2026-01-23 03:20:34 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-23 03:21:05 [INFO]: MongoDB Connected: ac-3nlnfep-shard-00-00.fs2fnzl.mongodb.net
+2026-01-23 03:21:05 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-23 03:21:05 [INFO]:        HOSPITAL INFORMATION SYSTEM (HIS) BACKEND SERVER        
+2026-01-23 03:21:05 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-23 03:21:05 [INFO]: 🚀 Server running in development mode on port 5001
+2026-01-23 03:21:05 [INFO]: 📡 API Base URL: http://localhost:5001/api/v1
+2026-01-23 03:21:05 [INFO]: 🔌 WebSocket enabled
+2026-01-23 03:21:05 [INFO]: 📋 Health check: http://localhost:5001/api/health
+2026-01-23 03:21:05 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-23 03:22:10 [INFO]: MongoDB Connected: ac-3nlnfep-shard-00-02.fs2fnzl.mongodb.net
+2026-01-23 03:22:10 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-23 03:22:10 [INFO]:        HOSPITAL INFORMATION SYSTEM (HIS) BACKEND SERVER        
+2026-01-23 03:22:10 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-23 03:22:10 [INFO]: 🚀 Server running in development mode on port 5001
+2026-01-23 03:22:10 [INFO]: 📡 API Base URL: http://localhost:5001/api/v1
+2026-01-23 03:22:10 [INFO]: 🔌 WebSocket enabled
+2026-01-23 03:22:10 [INFO]: 📋 Health check: http://localhost:5001/api/health
+2026-01-23 03:22:10 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-23 03:23:35 [ERROR]: InventoryItem validation failed: specifications: Cast to Map failed for value "ggg" (type string) at path "specifications" because of "TypeError"
+ValidationError: InventoryItem validation failed: specifications: Cast to Map failed for value "ggg" (type string) at path "specifications" because of "TypeError"
+    at Document.invalidate (D:\HIS Quasar 4 - Copy\HIS_Quasar\hospital-his-backend\node_modules\mongoose\lib\document.js:3221:32)
+    at model.$set (D:\HIS Quasar 4 - Copy\HIS_Quasar\hospital-his-backend\node_modules\mongoose\lib\document.js:1472:12)
+    at model.$set (D:\HIS Quasar 4 - Copy\HIS_Quasar\hospital-his-backend\node_modules\mongoose\lib\document.js:1121:16)
+    at model.Document (D:\HIS Quasar 4 - Copy\HIS_Quasar\hospital-his-backend\node_modules\mongoose\lib\document.js:167:12)
+    at model.Model (D:\HIS Quasar 4 - Copy\HIS_Quasar\hospital-his-backend\node_modules\mongoose\lib\model.js:123:12)
+    at new model (D:\HIS Quasar 4 - Copy\HIS_Quasar\hospital-his-backend\node_modules\mongoose\lib\model.js:4755:15)
+    at D:\HIS Quasar 4 - Copy\HIS_Quasar\hospital-his-backend\node_modules\mongoose\lib\model.js:2917:18
+    at Array.map (<anonymous>)
+    at Function.create (D:\HIS Quasar 4 - Copy\HIS_Quasar\hospital-his-backend\node_modules\mongoose\lib\model.js:2906:30)
+    at D:\HIS Quasar 4 - Copy\HIS_Quasar\hospital-his-backend\controllers\inventoryManager.controller.js:93:38
+2026-01-23 03:24:08 [ERROR]: InventoryItem validation failed: specifications: Cast to Map failed for value "Hello" (type string) at path "specifications" because of "TypeError"
+ValidationError: InventoryItem validation failed: specifications: Cast to Map failed for value "Hello" (type string) at path "specifications" because of "TypeError"
+    at Document.invalidate (D:\HIS Quasar 4 - Copy\HIS_Quasar\hospital-his-backend\node_modules\mongoose\lib\document.js:3221:32)
+    at model.$set (D:\HIS Quasar 4 - Copy\HIS_Quasar\hospital-his-backend\node_modules\mongoose\lib\document.js:1472:12)
+    at model.$set (D:\HIS Quasar 4 - Copy\HIS_Quasar\hospital-his-backend\node_modules\mongoose\lib\document.js:1121:16)
+    at model.Document (D:\HIS Quasar 4 - Copy\HIS_Quasar\hospital-his-backend\node_modules\mongoose\lib\document.js:167:12)
+    at model.Model (D:\HIS Quasar 4 - Copy\HIS_Quasar\hospital-his-backend\node_modules\mongoose\lib\model.js:123:12)
+    at new model (D:\HIS Quasar 4 - Copy\HIS_Quasar\hospital-his-backend\node_modules\mongoose\lib\model.js:4755:15)
+    at D:\HIS Quasar 4 - Copy\HIS_Quasar\hospital-his-backend\node_modules\mongoose\lib\model.js:2917:18
+    at Array.map (<anonymous>)
+    at Function.create (D:\HIS Quasar 4 - Copy\HIS_Quasar\hospital-his-backend\node_modules\mongoose\lib\model.js:2906:30)
+    at D:\HIS Quasar 4 - Copy\HIS_Quasar\hospital-his-backend\controllers\inventoryManager.controller.js:93:38

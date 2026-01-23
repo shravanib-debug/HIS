@@ -49,6 +49,7 @@ const adminDashboardRoutes = require('./routes/adminDashboard.routes');
 const revenueAnomalyRoutes = require('./routes/revenueAnomaly.routes');
 const breakGlassRoutes = require('./routes/breakGlass.routes');
 const adminBreakGlassRoutes = require('./routes/adminBreakGlass.routes');
+const inventoryManagerRoutes = require('./routes/inventoryManager.routes');
 
 // Initialize Express app
 const app = express();
@@ -163,6 +164,7 @@ app.use(`${API_PREFIX}/admin/dashboard`, adminDashboardRoutes);
 app.use(`${API_PREFIX}/admin/revenue-anomalies`, revenueAnomalyRoutes);
 app.use(`${API_PREFIX}/break-glass`, breakGlassRoutes);
 app.use(`${API_PREFIX}/admin/break-glass`, adminBreakGlassRoutes);
+app.use(`${API_PREFIX}/inventory-manager`, inventoryManagerRoutes);
 app.use(`${API_PREFIX}/nursing`, nursingRoutes);
 
 // 404 handler for undefined routes

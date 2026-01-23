@@ -4027,3 +4027,39 @@ Error: User role 'receptionist' is not authorized to access this route
     at next (D:\HIS Quasar 4 - Copy\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:280:10)
     at D:\HIS Quasar 4 - Copy\HIS_Quasar\hospital-his-backend\middleware\auth.middleware.js:46:9
     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2026-01-23 03:12:47 [ERROR]: InventoryItem validation failed: category: Category is required
+ValidationError: InventoryItem validation failed: category: Category is required
+    at Document.invalidate (D:\HIS Quasar 4 - Copy\HIS_Quasar\hospital-his-backend\node_modules\mongoose\lib\document.js:3221:32)
+    at D:\HIS Quasar 4 - Copy\HIS_Quasar\hospital-his-backend\node_modules\mongoose\lib\document.js:3014:17
+    at D:\HIS Quasar 4 - Copy\HIS_Quasar\hospital-his-backend\node_modules\mongoose\lib\schematype.js:1368:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:85:11)
+2026-01-23 03:15:10 [ERROR]: AuditLog validation failed: action: `CREATE` is not a valid enum value for path `action`.
+ValidationError: AuditLog validation failed: action: `CREATE` is not a valid enum value for path `action`.
+    at Document.invalidate (D:\HIS Quasar 4 - Copy\HIS_Quasar\hospital-his-backend\node_modules\mongoose\lib\document.js:3221:32)
+    at D:\HIS Quasar 4 - Copy\HIS_Quasar\hospital-his-backend\node_modules\mongoose\lib\document.js:3014:17
+    at D:\HIS Quasar 4 - Copy\HIS_Quasar\hospital-his-backend\node_modules\mongoose\lib\schematype.js:1368:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:85:11)
+2026-01-23 03:23:35 [ERROR]: InventoryItem validation failed: specifications: Cast to Map failed for value "ggg" (type string) at path "specifications" because of "TypeError"
+ValidationError: InventoryItem validation failed: specifications: Cast to Map failed for value "ggg" (type string) at path "specifications" because of "TypeError"
+    at Document.invalidate (D:\HIS Quasar 4 - Copy\HIS_Quasar\hospital-his-backend\node_modules\mongoose\lib\document.js:3221:32)
+    at model.$set (D:\HIS Quasar 4 - Copy\HIS_Quasar\hospital-his-backend\node_modules\mongoose\lib\document.js:1472:12)
+    at model.$set (D:\HIS Quasar 4 - Copy\HIS_Quasar\hospital-his-backend\node_modules\mongoose\lib\document.js:1121:16)
+    at model.Document (D:\HIS Quasar 4 - Copy\HIS_Quasar\hospital-his-backend\node_modules\mongoose\lib\document.js:167:12)
+    at model.Model (D:\HIS Quasar 4 - Copy\HIS_Quasar\hospital-his-backend\node_modules\mongoose\lib\model.js:123:12)
+    at new model (D:\HIS Quasar 4 - Copy\HIS_Quasar\hospital-his-backend\node_modules\mongoose\lib\model.js:4755:15)
+    at D:\HIS Quasar 4 - Copy\HIS_Quasar\hospital-his-backend\node_modules\mongoose\lib\model.js:2917:18
+    at Array.map (<anonymous>)
+    at Function.create (D:\HIS Quasar 4 - Copy\HIS_Quasar\hospital-his-backend\node_modules\mongoose\lib\model.js:2906:30)
+    at D:\HIS Quasar 4 - Copy\HIS_Quasar\hospital-his-backend\controllers\inventoryManager.controller.js:93:38
+2026-01-23 03:24:08 [ERROR]: InventoryItem validation failed: specifications: Cast to Map failed for value "Hello" (type string) at path "specifications" because of "TypeError"
+ValidationError: InventoryItem validation failed: specifications: Cast to Map failed for value "Hello" (type string) at path "specifications" because of "TypeError"
+    at Document.invalidate (D:\HIS Quasar 4 - Copy\HIS_Quasar\hospital-his-backend\node_modules\mongoose\lib\document.js:3221:32)
+    at model.$set (D:\HIS Quasar 4 - Copy\HIS_Quasar\hospital-his-backend\node_modules\mongoose\lib\document.js:1472:12)
+    at model.$set (D:\HIS Quasar 4 - Copy\HIS_Quasar\hospital-his-backend\node_modules\mongoose\lib\document.js:1121:16)
+    at model.Document (D:\HIS Quasar 4 - Copy\HIS_Quasar\hospital-his-backend\node_modules\mongoose\lib\document.js:167:12)
+    at model.Model (D:\HIS Quasar 4 - Copy\HIS_Quasar\hospital-his-backend\node_modules\mongoose\lib\model.js:123:12)
+    at new model (D:\HIS Quasar 4 - Copy\HIS_Quasar\hospital-his-backend\node_modules\mongoose\lib\model.js:4755:15)
+    at D:\HIS Quasar 4 - Copy\HIS_Quasar\hospital-his-backend\node_modules\mongoose\lib\model.js:2917:18
+    at Array.map (<anonymous>)
+    at Function.create (D:\HIS Quasar 4 - Copy\HIS_Quasar\hospital-his-backend\node_modules\mongoose\lib\model.js:2906:30)
+    at D:\HIS Quasar 4 - Copy\HIS_Quasar\hospital-his-backend\controllers\inventoryManager.controller.js:93:38
