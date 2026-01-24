@@ -165,6 +165,8 @@ exports.getUnbilledOrders = asyncHandler(async (req, res, next) => {
         encounterId || null
     );
 
+    console.log(`[DEBUG] getUnbilledOrders for ${department}: found ${orders.length} orders`);
+
     res.status(200).json({
         success: true,
         count: orders.length,

@@ -5065,3 +5065,115 @@ Error: Invalid credentials
     at C:\Users\shrav\OneDrive\Desktop\HIS 3\HIS_Quasar\hospital-his-backend\controllers\auth.controller.js:24:21
     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
 2026-01-24 18:24:44 [ERROR]: Uncaught Exception: listen EADDRINUSE: address already in use :::5001
+2026-01-24 18:36:09 [ERROR]: Invalid credentials
+Error: Invalid credentials
+    at C:\Users\shrav\OneDrive\Desktop\HIS 3\HIS_Quasar\hospital-his-backend\controllers\auth.controller.js:36:21
+2026-01-24 18:44:01 [ERROR]: Bill is already paid and locked
+Error: Bill is already paid and locked
+    at DepartmentBillingService.recordPayment (C:\Users\shrav\OneDrive\Desktop\HIS 3\HIS_Quasar\hospital-his-backend\services\departmentBilling.service.js:252:44)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async C:\Users\shrav\OneDrive\Desktop\HIS 3\HIS_Quasar\hospital-his-backend\controllers\departmentBilling.controller.js:102:18
+2026-01-24 18:44:02 [ERROR]: Bill is already paid and locked
+Error: Bill is already paid and locked
+    at DepartmentBillingService.recordPayment (C:\Users\shrav\OneDrive\Desktop\HIS 3\HIS_Quasar\hospital-his-backend\services\departmentBilling.service.js:252:44)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async C:\Users\shrav\OneDrive\Desktop\HIS 3\HIS_Quasar\hospital-his-backend\controllers\departmentBilling.controller.js:102:18
+2026-01-24 18:44:02 [ERROR]: Bill is already paid and locked
+Error: Bill is already paid and locked
+    at DepartmentBillingService.recordPayment (C:\Users\shrav\OneDrive\Desktop\HIS 3\HIS_Quasar\hospital-his-backend\services\departmentBilling.service.js:252:44)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async C:\Users\shrav\OneDrive\Desktop\HIS 3\HIS_Quasar\hospital-his-backend\controllers\departmentBilling.controller.js:102:18
+2026-01-24 18:44:02 [ERROR]: Bill is already paid and locked
+Error: Bill is already paid and locked
+    at DepartmentBillingService.recordPayment (C:\Users\shrav\OneDrive\Desktop\HIS 3\HIS_Quasar\hospital-his-backend\services\departmentBilling.service.js:252:44)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async C:\Users\shrav\OneDrive\Desktop\HIS 3\HIS_Quasar\hospital-his-backend\controllers\departmentBilling.controller.js:102:18
+2026-01-24 18:44:14 [ERROR]: Bill is already paid and locked
+Error: Bill is already paid and locked
+    at DepartmentBillingService.recordPayment (C:\Users\shrav\OneDrive\Desktop\HIS 3\HIS_Quasar\hospital-his-backend\services\departmentBilling.service.js:252:44)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async C:\Users\shrav\OneDrive\Desktop\HIS 3\HIS_Quasar\hospital-his-backend\controllers\departmentBilling.controller.js:102:18
+2026-01-24 18:54:57 [ERROR]: Bill is already paid and locked
+Error: Bill is already paid and locked
+    at DepartmentBillingService.recordPayment (C:\Users\shrav\OneDrive\Desktop\HIS 3\HIS_Quasar\hospital-his-backend\services\departmentBilling.service.js:252:44)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async C:\Users\shrav\OneDrive\Desktop\HIS 3\HIS_Quasar\hospital-his-backend\controllers\departmentBilling.controller.js:102:18
+2026-01-24 18:56:34 [ERROR]: Bill is already paid and locked
+Error: Bill is already paid and locked
+    at DepartmentBillingService.recordPayment (C:\Users\shrav\OneDrive\Desktop\HIS 3\HIS_Quasar\hospital-his-backend\services\departmentBilling.service.js:252:44)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async C:\Users\shrav\OneDrive\Desktop\HIS 3\HIS_Quasar\hospital-his-backend\controllers\departmentBilling.controller.js:102:18
+2026-01-24 19:37:28 [ERROR]: Uncaught Exception: listen EADDRINUSE: address already in use :::5001
+2026-01-24 19:38:09 [ERROR]: Uncaught Exception: listen EADDRINUSE: address already in use :::5001
+2026-01-24 19:39:52 [ERROR]: DrugInteraction.findInteractionsForMedicines is not a function
+TypeError: DrugInteraction.findInteractionsForMedicines is not a function
+    at DrugInteractionService.checkInteractions (C:\Users\shrav\OneDrive\Desktop\HIS 3\HIS_Quasar\hospital-his-backend\services\drugInteraction.service.js:46:56)
+    at DrugInteractionService.validatePrescriptionSafety (C:\Users\shrav\OneDrive\Desktop\HIS 3\HIS_Quasar\hospital-his-backend\services\drugInteraction.service.js:121:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async C:\Users\shrav\OneDrive\Desktop\HIS 3\HIS_Quasar\hospital-his-backend\controllers\pharmacy.controller.js:218:20
+2026-01-24 19:40:03 [ERROR]: DrugInteraction.findInteractionsForMedicines is not a function
+TypeError: DrugInteraction.findInteractionsForMedicines is not a function
+    at DrugInteractionService.checkInteractions (C:\Users\shrav\OneDrive\Desktop\HIS 3\HIS_Quasar\hospital-his-backend\services\drugInteraction.service.js:46:56)
+    at DrugInteractionService.validatePrescriptionSafety (C:\Users\shrav\OneDrive\Desktop\HIS 3\HIS_Quasar\hospital-his-backend\services\drugInteraction.service.js:121:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async C:\Users\shrav\OneDrive\Desktop\HIS 3\HIS_Quasar\hospital-his-backend\controllers\pharmacy.controller.js:218:20
+2026-01-24 19:45:27 [ERROR]: Uncaught Exception: listen EADDRINUSE: address already in use :::5001
+2026-01-24 19:46:24 [ERROR]: Uncaught Exception: listen EADDRINUSE: address already in use :::5001
+2026-01-24 20:00:05 [ERROR]: Uncaught Exception: listen EADDRINUSE: address already in use :::5001
+2026-01-24 20:01:45 [ERROR]: No unbilled laboratory orders found
+Error: No unbilled laboratory orders found
+    at DepartmentBillingService.generateLabBill (C:\Users\shrav\OneDrive\Desktop\HIS 3\HIS_Quasar\hospital-his-backend\services\departmentBilling.service.js:28:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async C:\Users\shrav\OneDrive\Desktop\HIS 3\HIS_Quasar\hospital-his-backend\controllers\departmentBilling.controller.js:17:18
+2026-01-24 20:01:48 [ERROR]: No unbilled laboratory orders found
+Error: No unbilled laboratory orders found
+    at DepartmentBillingService.generateLabBill (C:\Users\shrav\OneDrive\Desktop\HIS 3\HIS_Quasar\hospital-his-backend\services\departmentBilling.service.js:28:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async C:\Users\shrav\OneDrive\Desktop\HIS 3\HIS_Quasar\hospital-his-backend\controllers\departmentBilling.controller.js:17:18
+2026-01-24 20:01:48 [ERROR]: No unbilled laboratory orders found
+Error: No unbilled laboratory orders found
+    at DepartmentBillingService.generateLabBill (C:\Users\shrav\OneDrive\Desktop\HIS 3\HIS_Quasar\hospital-his-backend\services\departmentBilling.service.js:28:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async C:\Users\shrav\OneDrive\Desktop\HIS 3\HIS_Quasar\hospital-his-backend\controllers\departmentBilling.controller.js:17:18
+2026-01-24 20:01:49 [ERROR]: No unbilled laboratory orders found
+Error: No unbilled laboratory orders found
+    at DepartmentBillingService.generateLabBill (C:\Users\shrav\OneDrive\Desktop\HIS 3\HIS_Quasar\hospital-his-backend\services\departmentBilling.service.js:28:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async C:\Users\shrav\OneDrive\Desktop\HIS 3\HIS_Quasar\hospital-his-backend\controllers\departmentBilling.controller.js:17:18
+2026-01-24 20:01:49 [ERROR]: No unbilled laboratory orders found
+Error: No unbilled laboratory orders found
+    at DepartmentBillingService.generateLabBill (C:\Users\shrav\OneDrive\Desktop\HIS 3\HIS_Quasar\hospital-his-backend\services\departmentBilling.service.js:28:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async C:\Users\shrav\OneDrive\Desktop\HIS 3\HIS_Quasar\hospital-his-backend\controllers\departmentBilling.controller.js:17:18
+2026-01-24 20:01:49 [ERROR]: No unbilled laboratory orders found
+Error: No unbilled laboratory orders found
+    at DepartmentBillingService.generateLabBill (C:\Users\shrav\OneDrive\Desktop\HIS 3\HIS_Quasar\hospital-his-backend\services\departmentBilling.service.js:28:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async C:\Users\shrav\OneDrive\Desktop\HIS 3\HIS_Quasar\hospital-his-backend\controllers\departmentBilling.controller.js:17:18
+2026-01-24 20:01:49 [ERROR]: No unbilled laboratory orders found
+Error: No unbilled laboratory orders found
+    at DepartmentBillingService.generateLabBill (C:\Users\shrav\OneDrive\Desktop\HIS 3\HIS_Quasar\hospital-his-backend\services\departmentBilling.service.js:28:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async C:\Users\shrav\OneDrive\Desktop\HIS 3\HIS_Quasar\hospital-his-backend\controllers\departmentBilling.controller.js:17:18
+2026-01-24 20:02:07 [ERROR]: Uncaught Exception: listen EADDRINUSE: address already in use :::5001
+2026-01-24 20:06:55 [ERROR]: Uncaught Exception: listen EADDRINUSE: address already in use :::5001
+2026-01-24 20:07:09 [ERROR]: Uncaught Exception: listen EADDRINUSE: address already in use :::5001
+2026-01-24 20:07:24 [ERROR]: Uncaught Exception: listen EADDRINUSE: address already in use :::5001
+2026-01-24 20:07:59 [ERROR]: Payment amount (100) exceeds balance (0)
+Error: Payment amount (100) exceeds balance (0)
+    at DepartmentBillingService.recordPayment (C:\Users\shrav\OneDrive\Desktop\HIS 3\HIS_Quasar\hospital-his-backend\services\departmentBilling.service.js:261:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async C:\Users\shrav\OneDrive\Desktop\HIS 3\HIS_Quasar\hospital-his-backend\controllers\departmentBilling.controller.js:102:18
+2026-01-24 20:08:00 [ERROR]: Payment amount (100) exceeds balance (0)
+Error: Payment amount (100) exceeds balance (0)
+    at DepartmentBillingService.recordPayment (C:\Users\shrav\OneDrive\Desktop\HIS 3\HIS_Quasar\hospital-his-backend\services\departmentBilling.service.js:261:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async C:\Users\shrav\OneDrive\Desktop\HIS 3\HIS_Quasar\hospital-his-backend\controllers\departmentBilling.controller.js:102:18
+2026-01-24 20:12:13 [ERROR]: Uncaught Exception: listen EADDRINUSE: address already in use :::5001
+2026-01-24 20:14:41 [ERROR]: Uncaught Exception: listen EADDRINUSE: address already in use :::5001
+2026-01-24 20:19:38 [ERROR]: Uncaught Exception: listen EADDRINUSE: address already in use :::5001
+2026-01-24 20:19:38 [ERROR]: Uncaught Exception: listen EADDRINUSE: address already in use :::5001
+2026-01-24 20:20:08 [ERROR]: Uncaught Exception: listen EADDRINUSE: address already in use :::5001
+2026-01-24 20:20:08 [ERROR]: Uncaught Exception: listen EADDRINUSE: address already in use :::5001
+2026-01-24 20:20:34 [ERROR]: Uncaught Exception: listen EADDRINUSE: address already in use :::5001
+2026-01-24 20:20:34 [ERROR]: Uncaught Exception: listen EADDRINUSE: address already in use :::5001

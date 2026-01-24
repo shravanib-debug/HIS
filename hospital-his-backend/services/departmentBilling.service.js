@@ -21,7 +21,7 @@ class DepartmentBillingService {
         // Validate orders aren't already billed
         const orders = await LabTest.find({
             _id: { $in: orderIds },
-            isBilled: false
+            isBilled: { $ne: true }
         }).populate('test');
 
         if (orders.length === 0) {
@@ -84,7 +84,7 @@ class DepartmentBillingService {
     async generateRadiologyBill(orderIds, generatedBy, encounterId, encounterModel, patientId) {
         const orders = await Radiology.find({
             _id: { $in: orderIds },
-            isBilled: false
+            isBilled: { $ne: true }
         }).populate('test');
 
         if (orders.length === 0) {
@@ -143,7 +143,7 @@ class DepartmentBillingService {
     async generatePharmacyBill(dispenseIds, generatedBy, encounterId, encounterModel, patientId) {
         const dispenses = await PharmacyDispense.find({
             _id: { $in: dispenseIds },
-            isBilled: false
+            isBilled: { $ne: true }
         }).populate('items.medicine');
 
         if (dispenses.length === 0) {
@@ -232,6 +232,7 @@ class DepartmentBillingService {
             masterBill.departmentBills = [];
         }
         masterBill.departmentBills.push(departmentBill._id);
+        await masterBill.save(); // CRITICAL: Save the master bill with the new department bill reference
 
         // Update department bill with master bill reference
         departmentBill.masterBill = masterBill._id;
@@ -360,7 +361,8 @@ class DepartmentBillingService {
      * Get unbilled orders for a department
      */
     async getUnbilledOrders(department, patientId = null, encounterId = null) {
-        const query = { isBilled: false };
+        // Use $ne: true to also match documents where isBilled doesn't exist
+        const query = { isBilled: { $ne: true } };
         if (patientId) query.patient = patientId;
         if (encounterId) query.visit = encounterId;
 
@@ -380,7 +382,7 @@ class DepartmentBillingService {
                     .sort({ createdAt: -1 });
 
             case 'pharmacy':
-                const dispenseQuery = { isBilled: false };
+                const dispenseQuery = { isBilled: { $ne: true } };
                 if (patientId) dispenseQuery.patient = patientId;
                 return PharmacyDispense.find(dispenseQuery)
                     .populate('patient', 'firstName lastName patientId')
