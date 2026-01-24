@@ -5206,3 +5206,16 @@ Error: Invalid credentials
 2026-01-24 21:15:39 [ERROR]: Uncaught Exception: listen EADDRINUSE: address already in use :::5001
 2026-01-24 21:15:39 [ERROR]: Uncaught Exception: listen EADDRINUSE: address already in use :::5001
 2026-01-24 21:15:39 [ERROR]: Uncaught Exception: listen EADDRINUSE: address already in use :::5001
+2026-01-24 21:16:18 [ERROR]: Uncaught Exception: listen EADDRINUSE: address already in use :::5001
+2026-01-24 21:16:23 [ERROR]: Uncaught Exception: listen EADDRINUSE: address already in use :::5001
+2026-01-24 21:16:23 [ERROR]: Uncaught Exception: listen EADDRINUSE: address already in use :::5001
+2026-01-24 21:16:23 [ERROR]: Uncaught Exception: listen EADDRINUSE: address already in use :::5001
+2026-01-24 21:16:23 [ERROR]: Uncaught Exception: listen EADDRINUSE: address already in use :::5001
+2026-01-24 21:22:42 [ERROR]: Uncaught Exception: listen EADDRINUSE: address already in use :::5001
+2026-01-24 21:22:42 [ERROR]: Uncaught Exception: listen EADDRINUSE: address already in use :::5001
+2026-01-24 21:22:42 [ERROR]: Uncaught Exception: listen EADDRINUSE: address already in use :::5001
+2026-01-24 21:22:42 [ERROR]: Uncaught Exception: listen EADDRINUSE: address already in use :::5001
+2026-01-24 21:22:42 [ERROR]: Uncaught Exception: listen EADDRINUSE: address already in use :::5001
+2026-01-24 21:22:42 [ERROR]: Uncaught Exception: listen EADDRINUSE: address already in use :::5001
+2026-01-24 21:23:01 [ERROR]: Uncaught Exception: listen EADDRINUSE: address already in use :::5001
+2026-01-24 21:23:20 [ERROR]: Uncaught Exception: listen EADDRINUSE: address already in use :::5001

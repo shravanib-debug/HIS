@@ -12901,3 +12901,43 @@ Error: Invalid credentials
 2026-01-24 21:15:39 [INFO]: MongoDB Connected: ac-3nlnfep-shard-00-02.fs2fnzl.mongodb.net
 2026-01-24 21:15:39 [INFO]: MongoDB Connected: ac-3nlnfep-shard-00-00.fs2fnzl.mongodb.net
 2026-01-24 21:15:39 [INFO]: MongoDB Connected: ac-3nlnfep-shard-00-01.fs2fnzl.mongodb.net
+2026-01-24 21:16:17 [INFO]: MongoDB Connected: ac-3nlnfep-shard-00-00.fs2fnzl.mongodb.net
+2026-01-24 21:16:17 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-24 21:16:17 [INFO]:        HOSPITAL INFORMATION SYSTEM (HIS) BACKEND SERVER        
+2026-01-24 21:16:17 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-24 21:16:17 [INFO]: 🚀 Server running in development mode on port 5001
+2026-01-24 21:16:17 [INFO]: 📡 API Base URL: http://localhost:5001/api/v1
+2026-01-24 21:16:17 [INFO]: 🔌 WebSocket enabled
+2026-01-24 21:16:17 [INFO]: 📋 Health check: http://localhost:5001/api/health
+2026-01-24 21:16:17 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-24 21:16:17 [INFO]: MongoDB Connected: ac-3nlnfep-shard-00-01.fs2fnzl.mongodb.net
+2026-01-24 21:16:23 [INFO]: MongoDB Connected: ac-3nlnfep-shard-00-00.fs2fnzl.mongodb.net
+2026-01-24 21:16:23 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-24 21:16:23 [INFO]:        HOSPITAL INFORMATION SYSTEM (HIS) BACKEND SERVER        
+2026-01-24 21:16:23 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-24 21:16:23 [INFO]: 🚀 Server running in development mode on port 5001
+2026-01-24 21:16:23 [INFO]: 📡 API Base URL: http://localhost:5001/api/v1
+2026-01-24 21:16:23 [INFO]: 🔌 WebSocket enabled
+2026-01-24 21:16:23 [INFO]: 📋 Health check: http://localhost:5001/api/health
+2026-01-24 21:16:23 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-24 21:16:23 [INFO]: MongoDB Connected: ac-3nlnfep-shard-00-02.fs2fnzl.mongodb.net
+2026-01-24 21:16:23 [INFO]: MongoDB Connected: ac-3nlnfep-shard-00-00.fs2fnzl.mongodb.net
+2026-01-24 21:16:23 [INFO]: MongoDB Connected: ac-3nlnfep-shard-00-01.fs2fnzl.mongodb.net
+2026-01-24 21:16:23 [INFO]: MongoDB Connected: ac-3nlnfep-shard-00-02.fs2fnzl.mongodb.net
+2026-01-24 21:22:42 [INFO]: MongoDB Connected: ac-3nlnfep-shard-00-02.fs2fnzl.mongodb.net
+2026-01-24 21:22:42 [INFO]: MongoDB Connected: ac-3nlnfep-shard-00-02.fs2fnzl.mongodb.net
+2026-01-24 21:22:42 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-24 21:22:42 [INFO]:        HOSPITAL INFORMATION SYSTEM (HIS) BACKEND SERVER        
+2026-01-24 21:22:42 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-24 21:22:42 [INFO]: 🚀 Server running in development mode on port 5001
+2026-01-24 21:22:42 [INFO]: 📡 API Base URL: http://localhost:5001/api/v1
+2026-01-24 21:22:42 [INFO]: 🔌 WebSocket enabled
+2026-01-24 21:22:42 [INFO]: 📋 Health check: http://localhost:5001/api/health
+2026-01-24 21:22:42 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-24 21:22:42 [INFO]: MongoDB Connected: ac-3nlnfep-shard-00-01.fs2fnzl.mongodb.net
+2026-01-24 21:22:42 [INFO]: MongoDB Connected: ac-3nlnfep-shard-00-00.fs2fnzl.mongodb.net
+2026-01-24 21:22:42 [INFO]: MongoDB Connected: ac-3nlnfep-shard-00-01.fs2fnzl.mongodb.net
+2026-01-24 21:22:42 [INFO]: MongoDB Connected: ac-3nlnfep-shard-00-01.fs2fnzl.mongodb.net
+2026-01-24 21:22:42 [INFO]: MongoDB Connected: ac-3nlnfep-shard-00-00.fs2fnzl.mongodb.net
+2026-01-24 21:23:01 [INFO]: MongoDB Connected: ac-3nlnfep-shard-00-00.fs2fnzl.mongodb.net
+2026-01-24 21:23:20 [INFO]: MongoDB Connected: ac-3nlnfep-shard-00-01.fs2fnzl.mongodb.net
