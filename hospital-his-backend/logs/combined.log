@@ -13111,3 +13111,15 @@ Error: Not authorized to access this route
 2026-01-24 22:33:30 [INFO]: [ClinicalDashboard] Fetching stats for doctor 6970e6e6ae32f124038cc0a6
 2026-01-24 22:33:30 [INFO]: [ClinicalDashboard] Response: appointments=4, labs=20, critical=4
 2026-01-24 22:33:33 [INFO]: Client disconnected: 2qWd8o-PaJ_e2qs2AAAC
+2026-01-24 22:41:34 [INFO]: Client connected: e7w2G4Y7aCPacOsPAAAF
+2026-01-24 22:41:34 [INFO]: [ClinicalDashboard] Fetching stats for doctor 6970e6e6ae32f124038cc0a6
+2026-01-24 22:41:34 [INFO]: [ClinicalDashboard] Response: appointments=5, labs=20, critical=4
+2026-01-24 22:41:34 [INFO]: [ClinicalDashboard] Fetching stats for doctor 6970e6e6ae32f124038cc0a6
+2026-01-24 22:41:35 [INFO]: [ClinicalDashboard] Response: appointments=5, labs=20, critical=4
+2026-01-24 22:41:42 [INFO]: Client disconnected: e7w2G4Y7aCPacOsPAAAF
+2026-01-24 22:44:32 [INFO]: [ClinicalDashboard] Fetching stats for doctor 6970e6e6ae32f124038cc0a6
+2026-01-24 22:44:32 [INFO]: Client connected: AkPD1t4DsT1lbxnrAAAI
+2026-01-24 22:44:32 [INFO]: [ClinicalDashboard] Response: appointments=6, labs=20, critical=4
+2026-01-24 22:44:32 [INFO]: [ClinicalDashboard] Fetching stats for doctor 6970e6e6ae32f124038cc0a6
+2026-01-24 22:44:32 [INFO]: [ClinicalDashboard] Response: appointments=6, labs=20, critical=4
+2026-01-24 22:44:38 [INFO]: Client disconnected: AkPD1t4DsT1lbxnrAAAI
