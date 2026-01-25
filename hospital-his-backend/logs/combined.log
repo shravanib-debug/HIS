@@ -14497,3 +14497,42 @@ Error: User role 'nurse' is not authorized to access this route
 2026-01-25 07:15:54 [INFO]: [ClinicalDashboard] Response: appointments=3, labs=20, critical=6
 2026-01-25 07:15:56 [INFO]: Client disconnected: Eti8Ha6n3Ec9QtVWAAAU
 2026-01-25 07:16:36 [WARN]: MongoDB disconnected. Attempting to reconnect...
+2026-01-25 09:02:09 [INFO]: MongoDB Connected: ac-3nlnfep-shard-00-01.fs2fnzl.mongodb.net
+2026-01-25 09:02:09 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-25 09:02:09 [INFO]:        HOSPITAL INFORMATION SYSTEM (HIS) BACKEND SERVER        
+2026-01-25 09:02:09 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-25 09:02:09 [INFO]: 🚀 Server running in development mode on port 5001
+2026-01-25 09:02:09 [INFO]: 📡 API Base URL: http://localhost:5001/api/v1
+2026-01-25 09:02:09 [INFO]: 🔌 WebSocket enabled
+2026-01-25 09:02:09 [INFO]: 📋 Health check: http://localhost:5001/api/health
+2026-01-25 09:02:09 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-25 09:02:15 [INFO]: Client connected: 82OeGTD_w078lLyTAAAC
+2026-01-25 09:02:15 [INFO]: [ClinicalDashboard] Fetching stats for doctor 6970e6e6ae32f124038cc0a6
+2026-01-25 09:02:15 [INFO]: [ClinicalDashboard] Response: appointments=3, labs=20, critical=6
+2026-01-25 09:02:15 [INFO]: [ClinicalDashboard] Fetching stats for doctor 6970e6e6ae32f124038cc0a6
+2026-01-25 09:02:16 [INFO]: [ClinicalDashboard] Response: appointments=3, labs=20, critical=6
+2026-01-25 09:02:20 [INFO]: Client disconnected: 82OeGTD_w078lLyTAAAC
+2026-01-25 09:02:27 [ERROR]: Invalid credentials
+Error: Invalid credentials
+    at /Users/khush/Desktop/Hackathons/Quasar/HIS 5/HIS_Quasar/hospital-his-backend/controllers/auth.controller.js:36:21
+2026-01-25 09:02:33 [INFO]: Client connected: qk0ivH8hBhW5jNAVAAAF
+2026-01-25 09:02:33 [INFO]: [ClinicalDashboard] Fetching stats for doctor 6970e6e6ae32f124038cc0a8
+2026-01-25 09:02:33 [INFO]: [ClinicalDashboard] Response: appointments=0, labs=0, critical=0
+2026-01-25 09:02:33 [INFO]: [ClinicalDashboard] Fetching stats for doctor 6970e6e6ae32f124038cc0a8
+2026-01-25 09:02:33 [INFO]: [ClinicalDashboard] Response: appointments=0, labs=0, critical=0
+2026-01-25 09:02:35 [INFO]: Client disconnected: qk0ivH8hBhW5jNAVAAAF
+2026-01-25 09:05:02 [INFO]: Client connected: fQzVfGDF88wnGhecAAAI
+2026-01-25 09:05:02 [INFO]: [ClinicalDashboard] Fetching stats for doctor 6970e6e6ae32f124038cc0a6
+2026-01-25 09:05:02 [INFO]: [ClinicalDashboard] Response: appointments=3, labs=20, critical=6
+2026-01-25 09:05:02 [INFO]: [ClinicalDashboard] Fetching stats for doctor 6970e6e6ae32f124038cc0a6
+2026-01-25 09:05:02 [INFO]: [ClinicalDashboard] Response: appointments=3, labs=20, critical=6
+2026-01-25 09:05:05 [INFO]: Client disconnected: fQzVfGDF88wnGhecAAAI
+2026-01-25 09:38:44 [INFO]: Client connected: xggPIRfeiakBsghrAAAL
+2026-01-25 09:38:44 [INFO]: [ClinicalDashboard] Fetching stats for doctor 6970e6e6ae32f124038cc0a6
+2026-01-25 09:38:44 [INFO]: [ClinicalDashboard] Response: appointments=3, labs=20, critical=6
+2026-01-25 09:38:44 [INFO]: [ClinicalDashboard] Fetching stats for doctor 6970e6e6ae32f124038cc0a6
+2026-01-25 09:38:44 [INFO]: [ClinicalDashboard] Response: appointments=3, labs=20, critical=6
+2026-01-25 09:38:48 [INFO]: Client disconnected: xggPIRfeiakBsghrAAAL
+2026-01-25 10:06:07 [WARN]: MongoDB disconnected. Attempting to reconnect...
+2026-01-25 10:06:18 [INFO]: MongoDB reconnected
+2026-01-25 10:40:15 [WARN]: MongoDB disconnected. Attempting to reconnect...
