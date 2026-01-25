@@ -6,6 +6,7 @@ import { motion } from 'framer-motion';
 import ReceptionistDashboard from './ReceptionistDashboard';
 import ClinicalDashboard from './ClinicalDashboard';
 import AdminGovernanceDashboard from '../admin/AdminGovernanceDashboard';
+import InventoryDashboard from '../inventory/InventoryDashboard';
 
 const StatCard = ({ title, value, subtext, icon: Icon, color }) => (
     <motion.div
@@ -63,6 +64,11 @@ const Dashboard = () => {
             return <AdminGovernanceDashboard />;
         }
 
+        // Inventory Manager View
+        if (user?.role === 'inventory_manager') {
+            return <InventoryDashboard />;
+        }
+
         // Pharmacist View
         if (user?.role === 'pharmacist') {
             return (
@@ -101,7 +107,7 @@ const Dashboard = () => {
     };
 
     // For roles with dedicated dashboards, don't show the shared widgets
-    const showSharedWidgets = !['receptionist', 'doctor', 'nurse', 'head_nurse'].includes(user?.role);
+    const showSharedWidgets = !['receptionist', 'doctor', 'nurse', 'head_nurse', 'inventory_manager'].includes(user?.role);
 
     return (
         <div className="min-h-screen">

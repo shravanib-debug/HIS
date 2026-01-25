@@ -1,9 +1,12 @@
-import React, { useState, useRef, useCallback } from 'react';
+import React, { useState, useRef, useCallback, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { X, Check, Scan, Shield } from 'lucide-react';
+import { X, Check, Scan, Shield, Camera, Upload, RefreshCw, AlertCircle, CheckCircle, UserPlus, Search, ChevronDown, ChevronUp, Mail, Phone, Building2 } from 'lucide-react';
 import { useDispatch } from 'react-redux';
 import { createPatient } from '../../features/patients/patientsSlice';
 import ScanIDModal from '../idScan/ScanIDModal';
+import axios from 'axios';
+
+const API_URL = 'http://localhost:5001/api/v1';
 
 const AddPatientModal = ({ isOpen, onClose }) => {
     const dispatch = useDispatch();
@@ -30,10 +33,30 @@ const AddPatientModal = ({ isOpen, onClose }) => {
         idDocument: {
             hasOptedIn: false,
             imageData: null, // Base64 for preview
+        },
+        // Referral Information (Optional)
+        referral: {
+            type: null, // 'INTERNAL' or 'EXTERNAL' or null
+            doctorId: '',
+            doctorName: '',
+            clinicName: '',
+            email: '',
+            phone: '',
         }
     };
     const [formData, setFormData] = useState(initialFormData);
     const [idCaptureStatus, setIdCaptureStatus] = useState('idle'); // 'idle', 'captured', 'uploading'
+    const [isCameraActive, setIsCameraActive] = useState(false);
+    const videoRef = useRef(null);
+    const canvasRef = useRef(null);
+    const fileInputRef = useRef(null);
+
+    // Referral state
+    const [showReferral, setShowReferral] = useState(false);
+    const [doctorSearchQuery, setDoctorSearchQuery] = useState('');
+    const [doctorSearchResults, setDoctorSearchResults] = useState([]);
+    const [isSearchingDoctors, setIsSearchingDoctors] = useState(false);
+    const [showDoctorDropdown, setShowDoctorDropdown] = useState(false);
 
     const handleChange = (e) => {
         const { name, value } = e.target;
@@ -62,6 +85,188 @@ const AddPatientModal = ({ isOpen, onClose }) => {
             phone: extractedData.phone || prev.phone,
             maskedAadhaar: extractedData.maskedAadhaar || prev.maskedAadhaar,
         }));
+    };
+
+    /**
+     * Search for internal doctors
+     */
+    const searchDoctors = useCallback(async (query) => {
+        if (!query || query.length < 2) {
+            setDoctorSearchResults([]);
+            return;
+        }
+
+        setIsSearchingDoctors(true);
+        try {
+            const token = localStorage.getItem('token');
+            const response = await axios.get(`${API_URL}/users/doctors/search?query=${encodeURIComponent(query)}`, {
+                headers: { Authorization: `Bearer ${token}` }
+            });
+            setDoctorSearchResults(response.data.data || []);
+            setShowDoctorDropdown(true);
+        } catch (error) {
+            console.error('Doctor search failed:', error);
+            setDoctorSearchResults([]);
+        } finally {
+            setIsSearchingDoctors(false);
+        }
+    }, []);
+
+    // Debounced doctor search
+    useEffect(() => {
+        const timer = setTimeout(() => {
+            if (doctorSearchQuery && formData.referral.type === 'INTERNAL') {
+                searchDoctors(doctorSearchQuery);
+            }
+        }, 300);
+        return () => clearTimeout(timer);
+    }, [doctorSearchQuery, formData.referral.type, searchDoctors]);
+
+    /**
+     * Select an internal doctor from search results
+     */
+    const selectInternalDoctor = (doctor) => {
+        setFormData(prev => ({
+            ...prev,
+            referral: {
+                ...prev.referral,
+                type: 'INTERNAL',
+                doctorId: doctor._id,
+                doctorName: `${doctor.profile?.firstName || ''} ${doctor.profile?.lastName || ''}`.trim(),
+                email: doctor.email,
+                phone: doctor.profile?.phone || '',
+                clinicName: '',
+            }
+        }));
+        setDoctorSearchQuery('');
+        setShowDoctorDropdown(false);
+    };
+
+    /**
+     * Handle external referral input
+     */
+    const handleExternalReferral = (field, value) => {
+        setFormData(prev => ({
+            ...prev,
+            referral: {
+                ...prev.referral,
+                type: 'EXTERNAL',
+                doctorId: '',
+                [field]: value,
+            }
+        }));
+    };
+
+    /**
+     * Clear referral information
+     */
+    const clearReferral = () => {
+        setFormData(prev => ({
+            ...prev,
+            referral: {
+                type: null,
+                doctorId: '',
+                doctorName: '',
+                clinicName: '',
+                email: '',
+                phone: '',
+            }
+        }));
+        setDoctorSearchQuery('');
+        setShowReferral(false);
+    };
+
+    const startCamera = async () => {
+        setIsCameraActive(true);
+        // Small delay to ensure video element is rendered
+        setTimeout(async () => {
+            try {
+                const stream = await navigator.mediaDevices.getUserMedia({ video: true });
+                if (videoRef.current) {
+                    videoRef.current.srcObject = stream;
+                }
+            } catch (err) {
+                console.error("Error accessing camera:", err);
+                setIsCameraActive(false);
+                alert("Could not access camera. Please check permissions.");
+            }
+        }, 100);
+    };
+
+    const stopCamera = () => {
+        setIsCameraActive(false);
+        if (videoRef.current && videoRef.current.srcObject) {
+            const tracks = videoRef.current.srcObject.getTracks();
+            tracks.forEach(track => track.stop());
+            videoRef.current.srcObject = null;
+        }
+    };
+
+    const captureImage = () => {
+        if (videoRef.current && canvasRef.current) {
+            const video = videoRef.current;
+            const canvas = canvasRef.current;
+            const context = canvas.getContext('2d');
+
+            canvas.width = video.videoWidth;
+            canvas.height = video.videoHeight;
+            context.drawImage(video, 0, 0, canvas.width, canvas.height);
+
+            const imageDataUrl = canvas.toDataURL('image/jpeg');
+
+            setFormData(prev => ({
+                ...prev,
+                idDocument: {
+                    ...prev.idDocument,
+                    imageData: imageDataUrl
+                }
+            }));
+            setIdCaptureStatus('captured');
+            stopCamera();
+        }
+    };
+
+    const handleFileUpload = (e) => {
+        const file = e.target.files[0];
+        if (file) {
+            const reader = new FileReader();
+            reader.onloadend = () => {
+                setFormData(prev => ({
+                    ...prev,
+                    idDocument: {
+                        ...prev.idDocument,
+                        imageData: reader.result
+                    }
+                }));
+                setIdCaptureStatus('captured');
+            };
+            reader.readAsDataURL(file);
+        }
+    };
+
+    const resetIdCapture = () => {
+        setFormData(prev => ({
+            ...prev,
+            idDocument: {
+                ...prev.idDocument,
+                imageData: null
+            }
+        }));
+        setIdCaptureStatus('idle');
+        stopCamera();
+    };
+
+    const handleOptOut = () => {
+        setFormData(prev => ({
+            ...prev,
+            idDocument: {
+                ...prev.idDocument,
+                imageData: null,
+                hasOptedIn: false
+            }
+        }));
+        setIdCaptureStatus('idle');
+        stopCamera();
     };
 
     const handleSubmit = async (e) => {
@@ -344,6 +549,220 @@ const AddPatientModal = ({ isOpen, onClose }) => {
                                             <span>Patient can opt out of ID capture at any time.</span>
                                         </div>
                                     </div>
+                                </div>
+
+                                {/* ═══════════════════════════════════════════════════════════════════════════════ */}
+                                {/* REFERRAL SECTION (Optional) */}
+                                {/* ═══════════════════════════════════════════════════════════════════════════════ */}
+                                <div className="border-t border-gray-100 pt-6">
+                                    <button
+                                        type="button"
+                                        onClick={() => setShowReferral(!showReferral)}
+                                        className="w-full flex items-center justify-between p-3 bg-slate-50 hover:bg-slate-100 rounded-xl transition-all"
+                                    >
+                                        <div className="flex items-center gap-3">
+                                            <div className="w-10 h-10 bg-indigo-100 rounded-lg flex items-center justify-center">
+                                                <UserPlus size={20} className="text-indigo-600" />
+                                            </div>
+                                            <div className="text-left">
+                                                <h3 className="text-sm font-bold text-slate-700">Referred By Doctor</h3>
+                                                <p className="text-xs text-gray-500">Optional - Record referral for coordination</p>
+                                            </div>
+                                        </div>
+                                        <div className="flex items-center gap-2">
+                                            {formData.referral.doctorName && (
+                                                <span className="text-xs font-medium text-indigo-600 bg-indigo-50 px-2 py-1 rounded-full">
+                                                    {formData.referral.type === 'INTERNAL' ? '🏥' : '🩺'} {formData.referral.doctorName}
+                                                </span>
+                                            )}
+                                            {showReferral ? <ChevronUp size={20} className="text-gray-400" /> : <ChevronDown size={20} className="text-gray-400" />}
+                                        </div>
+                                    </button>
+
+                                    <AnimatePresence>
+                                        {showReferral && (
+                                            <motion.div
+                                                initial={{ height: 0, opacity: 0 }}
+                                                animate={{ height: 'auto', opacity: 1 }}
+                                                exit={{ height: 0, opacity: 0 }}
+                                                className="overflow-hidden"
+                                            >
+                                                <div className="pt-4 space-y-4">
+                                                    {/* Referral Type Tabs */}
+                                                    <div className="flex gap-2">
+                                                        <button
+                                                            type="button"
+                                                            onClick={() => setFormData(prev => ({ ...prev, referral: { ...prev.referral, type: 'INTERNAL', doctorId: '', doctorName: '', email: '', phone: '', clinicName: '' } }))}
+                                                            className={`flex-1 py-2.5 px-4 rounded-lg text-sm font-medium transition-all ${formData.referral.type === 'INTERNAL'
+                                                                    ? 'bg-indigo-600 text-white shadow-md'
+                                                                    : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
+                                                                }`}
+                                                        >
+                                                            🏥 Internal Doctor
+                                                        </button>
+                                                        <button
+                                                            type="button"
+                                                            onClick={() => setFormData(prev => ({ ...prev, referral: { ...prev.referral, type: 'EXTERNAL', doctorId: '', doctorName: '', email: '', phone: '', clinicName: '' } }))}
+                                                            className={`flex-1 py-2.5 px-4 rounded-lg text-sm font-medium transition-all ${formData.referral.type === 'EXTERNAL'
+                                                                    ? 'bg-indigo-600 text-white shadow-md'
+                                                                    : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
+                                                                }`}
+                                                        >
+                                                            🩺 External Doctor
+                                                        </button>
+                                                    </div>
+
+                                                    {/* Internal Doctor Search */}
+                                                    {formData.referral.type === 'INTERNAL' && (
+                                                        <div className="relative">
+                                                            <label className="block text-sm font-medium text-slate-700 mb-1">
+                                                                Search Internal Doctor
+                                                            </label>
+                                                            <div className="relative">
+                                                                <input
+                                                                    type="text"
+                                                                    value={doctorSearchQuery}
+                                                                    onChange={(e) => setDoctorSearchQuery(e.target.value)}
+                                                                    onFocus={() => doctorSearchResults.length > 0 && setShowDoctorDropdown(true)}
+                                                                    className="w-full pl-10 pr-4 py-2.5 border border-gray-200 rounded-lg focus:ring-2 focus:ring-primary/20 focus:border-primary outline-none transition-all"
+                                                                    placeholder="Type doctor name..."
+                                                                />
+                                                                <Search size={18} className="absolute left-3 top-3 text-gray-400" />
+                                                                {isSearchingDoctors && (
+                                                                    <div className="absolute right-3 top-3">
+                                                                        <div className="w-4 h-4 border-2 border-gray-300 border-t-primary rounded-full animate-spin" />
+                                                                    </div>
+                                                                )}
+                                                            </div>
+
+                                                            {/* Search Results Dropdown */}
+                                                            {showDoctorDropdown && doctorSearchResults.length > 0 && (
+                                                                <div className="absolute z-10 w-full mt-1 bg-white border border-gray-200 rounded-lg shadow-lg max-h-48 overflow-y-auto">
+                                                                    {doctorSearchResults.map((doctor) => (
+                                                                        <button
+                                                                            key={doctor._id}
+                                                                            type="button"
+                                                                            onClick={() => selectInternalDoctor(doctor)}
+                                                                            className="w-full px-4 py-3 text-left hover:bg-slate-50 flex items-center gap-3 border-b border-gray-50 last:border-0"
+                                                                        >
+                                                                            <div className="w-8 h-8 bg-indigo-100 rounded-full flex items-center justify-center text-indigo-600 text-xs font-bold">
+                                                                                {doctor.profile?.firstName?.[0]}{doctor.profile?.lastName?.[0]}
+                                                                            </div>
+                                                                            <div>
+                                                                                <div className="font-medium text-slate-800">
+                                                                                    Dr. {doctor.profile?.firstName} {doctor.profile?.lastName}
+                                                                                </div>
+                                                                                <div className="text-xs text-gray-500">
+                                                                                    {doctor.profile?.specialization || doctor.department?.name || 'General'}
+                                                                                </div>
+                                                                            </div>
+                                                                        </button>
+                                                                    ))}
+                                                                </div>
+                                                            )}
+
+                                                            {/* Selected Doctor Display */}
+                                                            {formData.referral.doctorName && formData.referral.type === 'INTERNAL' && (
+                                                                <div className="mt-3 p-3 bg-green-50 border border-green-200 rounded-lg flex items-center justify-between">
+                                                                    <div className="flex items-center gap-2">
+                                                                        <CheckCircle size={16} className="text-green-600" />
+                                                                        <span className="font-medium text-green-800">Dr. {formData.referral.doctorName}</span>
+                                                                        <span className="text-xs text-green-600">({formData.referral.email})</span>
+                                                                    </div>
+                                                                    <button
+                                                                        type="button"
+                                                                        onClick={clearReferral}
+                                                                        className="text-red-500 hover:text-red-700 text-sm"
+                                                                    >
+                                                                        Remove
+                                                                    </button>
+                                                                </div>
+                                                            )}
+                                                        </div>
+                                                    )}
+
+                                                    {/* External Doctor Form */}
+                                                    {formData.referral.type === 'EXTERNAL' && (
+                                                        <div className="space-y-3">
+                                                            <div>
+                                                                <label className="block text-sm font-medium text-slate-700 mb-1">
+                                                                    Doctor Name *
+                                                                </label>
+                                                                <input
+                                                                    type="text"
+                                                                    value={formData.referral.doctorName}
+                                                                    onChange={(e) => handleExternalReferral('doctorName', e.target.value)}
+                                                                    className="w-full p-2.5 border border-gray-200 rounded-lg focus:ring-2 focus:ring-primary/20 focus:border-primary outline-none transition-all"
+                                                                    placeholder="Dr. John Smith"
+                                                                />
+                                                            </div>
+
+                                                            <div>
+                                                                <label className="block text-sm font-medium text-slate-700 mb-1">
+                                                                    <Building2 size={14} className="inline mr-1" />
+                                                                    Clinic / Hospital Name
+                                                                </label>
+                                                                <input
+                                                                    type="text"
+                                                                    value={formData.referral.clinicName}
+                                                                    onChange={(e) => handleExternalReferral('clinicName', e.target.value)}
+                                                                    className="w-full p-2.5 border border-gray-200 rounded-lg focus:ring-2 focus:ring-primary/20 focus:border-primary outline-none transition-all"
+                                                                    placeholder="City Medical Center"
+                                                                />
+                                                            </div>
+
+                                                            <div className="grid grid-cols-2 gap-3">
+                                                                <div>
+                                                                    <label className="block text-sm font-medium text-slate-700 mb-1">
+                                                                        <Mail size={14} className="inline mr-1" />
+                                                                        Email <span className="text-amber-500 text-xs">(for notification)</span>
+                                                                    </label>
+                                                                    <input
+                                                                        type="email"
+                                                                        value={formData.referral.email}
+                                                                        onChange={(e) => handleExternalReferral('email', e.target.value)}
+                                                                        className="w-full p-2.5 border border-gray-200 rounded-lg focus:ring-2 focus:ring-primary/20 focus:border-primary outline-none transition-all"
+                                                                        placeholder="doctor@clinic.com"
+                                                                    />
+                                                                </div>
+                                                                <div>
+                                                                    <label className="block text-sm font-medium text-slate-700 mb-1">
+                                                                        <Phone size={14} className="inline mr-1" />
+                                                                        Phone
+                                                                    </label>
+                                                                    <input
+                                                                        type="tel"
+                                                                        value={formData.referral.phone}
+                                                                        onChange={(e) => handleExternalReferral('phone', e.target.value)}
+                                                                        className="w-full p-2.5 border border-gray-200 rounded-lg focus:ring-2 focus:ring-primary/20 focus:border-primary outline-none transition-all"
+                                                                        placeholder="+91 98765 43210"
+                                                                    />
+                                                                </div>
+                                                            </div>
+
+                                                            {formData.referral.email && (
+                                                                <div className="flex items-start gap-2 p-3 bg-blue-50 border border-blue-100 rounded-lg text-sm text-blue-700">
+                                                                    <Mail size={16} className="mt-0.5 flex-shrink-0" />
+                                                                    <span>A professional notification email will be sent to the referring doctor when registration is complete.</span>
+                                                                </div>
+                                                            )}
+                                                        </div>
+                                                    )}
+
+                                                    {/* Clear Referral Button */}
+                                                    {formData.referral.type && (
+                                                        <button
+                                                            type="button"
+                                                            onClick={clearReferral}
+                                                            className="w-full py-2 text-sm text-gray-500 hover:text-red-600 transition-colors"
+                                                        >
+                                                            Clear Referral Information
+                                                        </button>
+                                                    )}
+                                                </div>
+                                            </motion.div>
+                                        )}
+                                    </AnimatePresence>
                                 </div>
 
                                 <canvas ref={canvasRef} className="hidden" />

@@ -146,3 +146,8 @@ ValidationError: Prescription validation failed: prescriptionNumber: Path `presc
 [2026-01-24T14:12:54.348Z] No valid medicines found to create Rx
 [2026-01-24T19:28:54.770Z] No prescription body found or empty array
 [2026-01-24T19:30:14.775Z] No prescription body found or empty array
+[2026-01-24T20:47:27.742Z] Start creating prescription for 69751c3297d892c45a38353d
+[2026-01-24T20:47:27.753Z] Processing med: Paracetamol 500mg
+[2026-01-24T20:47:27.779Z] Found med: Paracetamol 500mg (6970e6e5ae32f124038cbfef)
+[2026-01-24T20:47:27.787Z] Creating Prescription with 1 items
+[2026-01-24T20:47:27.886Z] Created Rx ID: 69752fdfde3a39160faca8ff
