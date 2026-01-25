@@ -14442,3 +14442,850 @@ Error: User role 'receptionist' is not authorized to access this route
 2026-01-25 05:51:05 [INFO]: Client connected: sQZYqbDI2bR4lvW6AAAu
 2026-01-25 05:51:05 [INFO]: Socket sQZYqbDI2bR4lvW6AAAu joined emergency room
 2026-01-25 05:51:06 [INFO]: Client disconnected: sQZYqbDI2bR4lvW6AAAu
+2026-01-25 05:54:31 [ERROR]: Please provide email and password
+Error: Please provide email and password
+    at D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\controllers\auth.controller.js:17:21
+    at D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\utils\asyncHandler.js:7:21
+    at Layer.handle [as handle_request] (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:175:3)
+2026-01-25 05:54:32 [ERROR]: Please provide email and password
+Error: Please provide email and password
+    at D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\controllers\auth.controller.js:17:21
+    at D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\utils\asyncHandler.js:7:21
+    at Layer.handle [as handle_request] (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:175:3)
+2026-01-25 05:54:54 [INFO]: Client connected: tUkTudJWEkuI9kMPAAAx
+2026-01-25 05:54:54 [INFO]: [ReceptionistDashboard] Fetching stats for date range: 2026-01-25T00:00:00.000Z to 2026-01-26T00:00:00.000Z
+2026-01-25 05:54:54 [INFO]: User 6970e6e6ae32f124038cc0aa joined personal room
+2026-01-25 05:54:54 [INFO]: [ReceptionistDashboard] Registrations today: 0, Total patients: 41
+2026-01-25 05:54:54 [INFO]: [ReceptionistDashboard] Fetching stats for date range: 2026-01-25T00:00:00.000Z to 2026-01-26T00:00:00.000Z
+2026-01-25 05:54:54 [INFO]: [ReceptionistDashboard] Registrations today: 0, Total patients: 41
+2026-01-25 05:55:25 [INFO]: [ReceptionistDashboard] Fetching stats for date range: 2026-01-25T00:00:00.000Z to 2026-01-26T00:00:00.000Z
+2026-01-25 05:55:25 [INFO]: [ReceptionistDashboard] Registrations today: 0, Total patients: 41
+2026-01-25 05:55:58 [INFO]: [ReceptionistDashboard] Fetching stats for date range: 2026-01-25T00:00:00.000Z to 2026-01-26T00:00:00.000Z
+2026-01-25 05:55:58 [INFO]: [ReceptionistDashboard] Registrations today: 0, Total patients: 41
+2026-01-25 05:56:26 [INFO]: [ReceptionistDashboard] Fetching stats for date range: 2026-01-25T00:00:00.000Z to 2026-01-26T00:00:00.000Z
+2026-01-25 05:56:26 [INFO]: [ReceptionistDashboard] Registrations today: 0, Total patients: 41
+2026-01-25 05:56:55 [INFO]: [ReceptionistDashboard] Fetching stats for date range: 2026-01-25T00:00:00.000Z to 2026-01-26T00:00:00.000Z
+2026-01-25 05:56:55 [INFO]: [ReceptionistDashboard] Registrations today: 0, Total patients: 41
+2026-01-25 05:57:34 [INFO]: Client disconnected: tUkTudJWEkuI9kMPAAAx
+2026-01-25 05:57:34 [INFO]: [ReceptionistDashboard] Fetching stats for date range: 2026-01-25T00:00:00.000Z to 2026-01-26T00:00:00.000Z
+2026-01-25 05:57:34 [INFO]: Client connected: MvIF0RUupnstCXd8AAAz
+2026-01-25 05:57:35 [INFO]: User 6970e6e6ae32f124038cc0aa joined personal room
+2026-01-25 05:57:35 [INFO]: [ReceptionistDashboard] Registrations today: 0, Total patients: 41
+2026-01-25 05:57:35 [INFO]: [ReceptionistDashboard] Fetching stats for date range: 2026-01-25T00:00:00.000Z to 2026-01-26T00:00:00.000Z
+2026-01-25 05:57:35 [INFO]: [ReceptionistDashboard] Registrations today: 0, Total patients: 41
+2026-01-25 05:57:39 [INFO]: Client disconnected: MvIF0RUupnstCXd8AAAz
+2026-01-25 05:57:39 [INFO]: [ReceptionistDashboard] Fetching stats for date range: 2026-01-25T00:00:00.000Z to 2026-01-26T00:00:00.000Z
+2026-01-25 05:57:39 [INFO]: Client connected: soXWS7zx68thrncUAAA1
+2026-01-25 05:57:39 [INFO]: User 6970e6e6ae32f124038cc0aa joined personal room
+2026-01-25 05:57:40 [INFO]: [ReceptionistDashboard] Registrations today: 0, Total patients: 41
+2026-01-25 05:57:41 [INFO]: Client disconnected: soXWS7zx68thrncUAAA1
+2026-01-25 05:57:41 [INFO]: [ReceptionistDashboard] Fetching stats for date range: 2026-01-25T00:00:00.000Z to 2026-01-26T00:00:00.000Z
+2026-01-25 05:57:41 [INFO]: Client connected: Nytgq5EO_ojqGMtUAAA3
+2026-01-25 05:57:41 [INFO]: User 6970e6e6ae32f124038cc0aa joined personal room
+2026-01-25 05:57:41 [INFO]: [ReceptionistDashboard] Registrations today: 0, Total patients: 41
+2026-01-25 05:57:47 [INFO]: Client disconnected: Nytgq5EO_ojqGMtUAAA3
+2026-01-25 05:57:47 [ERROR]: User role 'receptionist' is not authorized to access this route
+Error: User role 'receptionist' is not authorized to access this route
+    at D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\middleware\rbac.middleware.js:22:17
+    at Layer.handle [as handle_request] (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:280:10)
+    at D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\middleware\auth.middleware.js:46:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2026-01-25 05:57:47 [ERROR]: User role 'receptionist' is not authorized to access this route
+Error: User role 'receptionist' is not authorized to access this route
+    at D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\middleware\rbac.middleware.js:22:17
+    at Layer.handle [as handle_request] (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:280:10)
+    at D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\middleware\auth.middleware.js:46:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2026-01-25 05:57:47 [ERROR]: User role 'receptionist' is not authorized to access this route
+Error: User role 'receptionist' is not authorized to access this route
+    at D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\middleware\rbac.middleware.js:22:17
+    at Layer.handle [as handle_request] (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:280:10)
+    at D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\middleware\auth.middleware.js:46:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2026-01-25 05:57:47 [ERROR]: User role 'receptionist' is not authorized to access this route
+Error: User role 'receptionist' is not authorized to access this route
+    at D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\middleware\rbac.middleware.js:22:17
+    at Layer.handle [as handle_request] (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:280:10)
+    at D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\middleware\auth.middleware.js:46:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2026-01-25 05:57:48 [INFO]: Client connected: Fv3CvXGqiFqYA1I0AAA6
+2026-01-25 05:57:48 [INFO]: Socket Fv3CvXGqiFqYA1I0AAA6 joined emergency room
+2026-01-25 05:57:53 [INFO]: Client disconnected: Fv3CvXGqiFqYA1I0AAA6
+2026-01-25 05:57:53 [ERROR]: User role 'receptionist' is not authorized to access this route
+Error: User role 'receptionist' is not authorized to access this route
+    at D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\middleware\rbac.middleware.js:22:17
+    at Layer.handle [as handle_request] (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:280:10)
+    at D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\middleware\auth.middleware.js:46:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2026-01-25 05:57:53 [ERROR]: User role 'receptionist' is not authorized to access this route
+Error: User role 'receptionist' is not authorized to access this route
+    at D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\middleware\rbac.middleware.js:22:17
+    at Layer.handle [as handle_request] (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:280:10)
+    at D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\middleware\auth.middleware.js:46:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2026-01-25 05:57:53 [ERROR]: User role 'receptionist' is not authorized to access this route
+Error: User role 'receptionist' is not authorized to access this route
+    at D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\middleware\rbac.middleware.js:22:17
+    at Layer.handle [as handle_request] (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:280:10)
+    at D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\middleware\auth.middleware.js:46:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2026-01-25 05:57:53 [ERROR]: User role 'receptionist' is not authorized to access this route
+Error: User role 'receptionist' is not authorized to access this route
+    at D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\middleware\rbac.middleware.js:22:17
+    at Layer.handle [as handle_request] (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:280:10)
+    at D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\middleware\auth.middleware.js:46:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2026-01-25 05:57:55 [INFO]: Client connected: HO-qlt0sZxveqK7_AAA9
+2026-01-25 05:57:55 [INFO]: Socket HO-qlt0sZxveqK7_AAA9 joined emergency room
+2026-01-25 05:57:55 [INFO]: Client disconnected: HO-qlt0sZxveqK7_AAA9
+2026-01-25 05:57:56 [ERROR]: User role 'receptionist' is not authorized to access this route
+Error: User role 'receptionist' is not authorized to access this route
+    at D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\middleware\rbac.middleware.js:22:17
+    at Layer.handle [as handle_request] (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:280:10)
+    at D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\middleware\auth.middleware.js:46:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2026-01-25 05:57:56 [ERROR]: User role 'receptionist' is not authorized to access this route
+Error: User role 'receptionist' is not authorized to access this route
+    at D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\middleware\rbac.middleware.js:22:17
+    at Layer.handle [as handle_request] (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:280:10)
+    at D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\middleware\auth.middleware.js:46:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2026-01-25 05:57:56 [ERROR]: User role 'receptionist' is not authorized to access this route
+Error: User role 'receptionist' is not authorized to access this route
+    at D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\middleware\rbac.middleware.js:22:17
+    at Layer.handle [as handle_request] (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:280:10)
+    at D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\middleware\auth.middleware.js:46:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2026-01-25 05:57:56 [ERROR]: User role 'receptionist' is not authorized to access this route
+Error: User role 'receptionist' is not authorized to access this route
+    at D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\middleware\rbac.middleware.js:22:17
+    at Layer.handle [as handle_request] (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:280:10)
+    at D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\middleware\auth.middleware.js:46:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2026-01-25 05:58:00 [ERROR]: User role 'receptionist' is not authorized to access this route
+Error: User role 'receptionist' is not authorized to access this route
+    at D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\middleware\rbac.middleware.js:22:17
+    at Layer.handle [as handle_request] (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:280:10)
+    at D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\middleware\auth.middleware.js:46:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2026-01-25 05:58:00 [ERROR]: User role 'receptionist' is not authorized to access this route
+Error: User role 'receptionist' is not authorized to access this route
+    at D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\middleware\rbac.middleware.js:22:17
+    at Layer.handle [as handle_request] (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:280:10)
+    at D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\middleware\auth.middleware.js:46:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2026-01-25 05:58:00 [ERROR]: User role 'receptionist' is not authorized to access this route
+Error: User role 'receptionist' is not authorized to access this route
+    at D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\middleware\rbac.middleware.js:22:17
+    at Layer.handle [as handle_request] (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:280:10)
+    at D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\middleware\auth.middleware.js:46:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2026-01-25 05:58:00 [ERROR]: User role 'receptionist' is not authorized to access this route
+Error: User role 'receptionist' is not authorized to access this route
+    at D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\middleware\rbac.middleware.js:22:17
+    at Layer.handle [as handle_request] (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:280:10)
+    at D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\middleware\auth.middleware.js:46:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2026-01-25 06:00:09 [INFO]: [ReceptionistDashboard] Fetching stats for date range: 2026-01-25T00:00:00.000Z to 2026-01-26T00:00:00.000Z
+2026-01-25 06:00:09 [INFO]: Client connected: Eyxvx8sa7eJSXUtOAABA
+2026-01-25 06:00:09 [INFO]: User 6970e6e6ae32f124038cc0aa joined personal room
+2026-01-25 06:00:09 [INFO]: [ReceptionistDashboard] Registrations today: 0, Total patients: 41
+2026-01-25 06:00:09 [INFO]: [ReceptionistDashboard] Fetching stats for date range: 2026-01-25T00:00:00.000Z to 2026-01-26T00:00:00.000Z
+2026-01-25 06:00:09 [INFO]: [ReceptionistDashboard] Registrations today: 0, Total patients: 41
+2026-01-25 06:00:21 [INFO]: Client disconnected: Eyxvx8sa7eJSXUtOAABA
+2026-01-25 06:00:21 [INFO]: Client connected: f2px14fkK6z9OsC_AABD
+2026-01-25 06:00:21 [INFO]: Socket f2px14fkK6z9OsC_AABD joined emergency room
+2026-01-25 06:00:25 [INFO]: Client disconnected: f2px14fkK6z9OsC_AABD
+2026-01-25 06:00:26 [INFO]: Client connected: 6SP1NZPTdtlclkVuAABG
+2026-01-25 06:00:26 [INFO]: Socket 6SP1NZPTdtlclkVuAABG joined emergency room
+2026-01-25 06:01:19 [INFO]: Client disconnected: 6SP1NZPTdtlclkVuAABG
+2026-01-25 06:01:20 [INFO]: Client connected: gQHVyuDb8exrYFSbAABJ
+2026-01-25 06:01:20 [INFO]: Socket gQHVyuDb8exrYFSbAABJ joined emergency room
+2026-01-25 06:01:33 [INFO]: Client disconnected: gQHVyuDb8exrYFSbAABJ
+2026-01-25 06:01:43 [INFO]: Client connected: V1qk0UOuq-MRXQHcAABM
+2026-01-25 06:01:43 [INFO]: [ReceptionistDashboard] Fetching stats for date range: 2026-01-25T00:00:00.000Z to 2026-01-26T00:00:00.000Z
+2026-01-25 06:01:43 [INFO]: User 6970e6e6ae32f124038cc0aa joined personal room
+2026-01-25 06:01:43 [INFO]: [ReceptionistDashboard] Registrations today: 0, Total patients: 41
+2026-01-25 06:01:43 [INFO]: [ReceptionistDashboard] Fetching stats for date range: 2026-01-25T00:00:00.000Z to 2026-01-26T00:00:00.000Z
+2026-01-25 06:01:43 [INFO]: [ReceptionistDashboard] Registrations today: 0, Total patients: 41
+2026-01-25 06:01:48 [INFO]: Client disconnected: V1qk0UOuq-MRXQHcAABM
+2026-01-25 06:02:14 [INFO]: AI OCR Service: Sending image for extraction - Screenshot 2026-01-24 185919.png
+2026-01-25 06:02:19 [INFO]: AI OCR Service: Extraction successful - Confidence: high
+2026-01-25 06:04:42 [INFO]: [PatientRegistration] Referral recorded: EXTERNAL - Dr johnny smirhy
+2026-01-25 06:04:42 [ERROR]: Patient validation failed: bloodGroup: `` is not a valid enum value for path `bloodGroup`.
+ValidationError: Patient validation failed: bloodGroup: `` is not a valid enum value for path `bloodGroup`.
+    at Document.invalidate (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\mongoose\lib\document.js:3221:32)
+    at D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\mongoose\lib\document.js:3014:17
+    at D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\mongoose\lib\schematype.js:1368:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:85:11)
+2026-01-25 06:08:42 [INFO]: [PatientRegistration] New patient registered: PAT000043 - Harshada doe
+2026-01-25 06:09:48 [INFO]: Client connected: 6gZRdtFGcTnAzYKLAABP
+2026-01-25 06:09:48 [INFO]: Socket 6gZRdtFGcTnAzYKLAABP joined emergency room
+2026-01-25 06:10:54 [INFO]: Client disconnected: 6gZRdtFGcTnAzYKLAABP
+2026-01-25 06:11:17 [INFO]: Client connected: 2HTy08aan3FHlkc6AABS
+2026-01-25 06:11:17 [INFO]: [ClinicalDashboard] Fetching stats for doctor 6970e6e6ae32f124038cc0a6
+2026-01-25 06:11:18 [INFO]: [ClinicalDashboard] Response: appointments=2, labs=20, critical=5
+2026-01-25 06:11:18 [INFO]: [ClinicalDashboard] Fetching stats for doctor 6970e6e6ae32f124038cc0a6
+2026-01-25 06:11:18 [INFO]: [ClinicalDashboard] Response: appointments=2, labs=20, critical=5
+2026-01-25 06:11:24 [INFO]: Client disconnected: 2HTy08aan3FHlkc6AABS
+2026-01-25 06:11:28 [INFO]: Client connected: uYlFcnv9qr1GQD9RAABV
+2026-01-25 06:11:28 [INFO]: Socket uYlFcnv9qr1GQD9RAABV joined emergency room
+2026-01-25 06:14:45 [INFO]: Client disconnected: uYlFcnv9qr1GQD9RAABV
+2026-01-25 06:15:59 [INFO]: Client connected: e1kpsDNIUw3zWCXyAABY
+2026-01-25 06:15:59 [INFO]: Socket e1kpsDNIUw3zWCXyAABY joined emergency room
+2026-01-25 06:16:27 [INFO]: Client disconnected: e1kpsDNIUw3zWCXyAABY
+2026-01-25 06:16:31 [INFO]: Client connected: 591gJZtvdX6eSWt6AABb
+2026-01-25 06:16:31 [INFO]: Socket 591gJZtvdX6eSWt6AABb joined emergency room
+2026-01-25 06:17:09 [INFO]: Client disconnected: 591gJZtvdX6eSWt6AABb
+2026-01-25 06:17:20 [INFO]: Client connected: UpS8eS0BvwBp11FLAABe
+2026-01-25 06:17:20 [INFO]: Socket UpS8eS0BvwBp11FLAABe joined emergency room
+2026-01-25 06:19:40 [INFO]: Client disconnected: UpS8eS0BvwBp11FLAABe
+2026-01-25 06:20:19 [INFO]: Client connected: kSRjyY3eM-q6ubXQAABh
+2026-01-25 06:20:19 [INFO]: Socket kSRjyY3eM-q6ubXQAABh joined emergency room
+2026-01-25 06:23:21 [INFO]: Client disconnected: kSRjyY3eM-q6ubXQAABh
+2026-01-25 06:26:08 [INFO]: Client connected: xql7SHS6KgCswxZrAABk
+2026-01-25 06:26:08 [INFO]: Socket xql7SHS6KgCswxZrAABk joined emergency room
+2026-01-25 06:26:23 [ERROR]: Trauma Level 2 bundle not found
+Error: Trauma Level 2 bundle not found
+    at D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\controllers\emergency.orderSet.controller.js:43:21
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2026-01-25 06:26:34 [INFO]: Client disconnected: xql7SHS6KgCswxZrAABk
+2026-01-25 06:26:54 [INFO]: Client connected: jX_E47R2vvhfwgugAABn
+2026-01-25 06:26:54 [INFO]: Socket jX_E47R2vvhfwgugAABn joined emergency room
+2026-01-25 06:27:04 [INFO]: Client disconnected: jX_E47R2vvhfwgugAABn
+2026-01-25 06:27:37 [INFO]: [ReceptionistDashboard] Fetching stats for date range: 2026-01-25T00:00:00.000Z to 2026-01-26T00:00:00.000Z
+2026-01-25 06:27:37 [INFO]: Client connected: RSTDpCOuHC5gMEJvAABq
+2026-01-25 06:27:37 [INFO]: User 6970e6e6ae32f124038cc0aa joined personal room
+2026-01-25 06:27:37 [INFO]: [ReceptionistDashboard] Registrations today: 2, Total patients: 43
+2026-01-25 06:27:37 [INFO]: [ReceptionistDashboard] Fetching stats for date range: 2026-01-25T00:00:00.000Z to 2026-01-26T00:00:00.000Z
+2026-01-25 06:27:37 [INFO]: [ReceptionistDashboard] Registrations today: 2, Total patients: 43
+2026-01-25 06:27:41 [INFO]: Client disconnected: RSTDpCOuHC5gMEJvAABq
+2026-01-25 06:29:21 [ERROR]: User role 'receptionist' is not authorized to access this route
+Error: User role 'receptionist' is not authorized to access this route
+    at D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\middleware\rbac.middleware.js:22:17
+    at Layer.handle [as handle_request] (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:284:15
+    at param (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:365:14)
+    at param (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:421:3)
+    at next (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:280:10)
+2026-01-25 06:29:41 [ERROR]: Not authorized to access this route
+Error: Not authorized to access this route
+    at D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\middleware\auth.middleware.js:28:21
+    at D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\utils\asyncHandler.js:7:21
+    at Layer.handle [as handle_request] (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:328:13)
+    at D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:175:3)
+    at router (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\layer.js:95:5)
+2026-01-25 06:29:44 [ERROR]: Invalid credentials
+Error: Invalid credentials
+    at D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\controllers\auth.controller.js:36:21
+2026-01-25 06:29:50 [INFO]: [ClinicalDashboard] Fetching stats for doctor 6970e6e6ae32f124038cc0a6
+2026-01-25 06:29:50 [INFO]: Client connected: cxxF1_jMmR81ehdZAABt
+2026-01-25 06:29:50 [INFO]: [ClinicalDashboard] Response: appointments=2, labs=20, critical=5
+2026-01-25 06:29:50 [INFO]: [ClinicalDashboard] Fetching stats for doctor 6970e6e6ae32f124038cc0a6
+2026-01-25 06:29:50 [INFO]: [ClinicalDashboard] Response: appointments=2, labs=20, critical=5
+2026-01-25 06:29:52 [INFO]: Client disconnected: cxxF1_jMmR81ehdZAABt
+2026-01-25 06:30:59 [ERROR]: User role 'doctor' is not authorized to access this route
+Error: User role 'doctor' is not authorized to access this route
+    at D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\middleware\rbac.middleware.js:22:17
+    at Layer.handle [as handle_request] (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:280:10)
+    at D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\middleware\auth.middleware.js:46:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2026-01-25 06:31:00 [ERROR]: User role 'doctor' is not authorized to access this route
+Error: User role 'doctor' is not authorized to access this route
+    at D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\middleware\rbac.middleware.js:22:17
+    at Layer.handle [as handle_request] (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:280:10)
+    at D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\middleware\auth.middleware.js:46:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2026-01-25 06:31:02 [ERROR]: User role 'doctor' is not authorized to access this route
+Error: User role 'doctor' is not authorized to access this route
+    at D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\middleware\rbac.middleware.js:22:17
+    at Layer.handle [as handle_request] (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:280:10)
+    at D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\middleware\auth.middleware.js:46:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2026-01-25 06:31:07 [ERROR]: User role 'doctor' is not authorized to access this route
+Error: User role 'doctor' is not authorized to access this route
+    at D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\middleware\rbac.middleware.js:22:17
+    at Layer.handle [as handle_request] (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:280:10)
+    at D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\middleware\auth.middleware.js:46:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2026-01-25 06:31:21 [ERROR]: User role 'doctor' is not authorized to access this route
+Error: User role 'doctor' is not authorized to access this route
+    at D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\middleware\rbac.middleware.js:22:17
+    at Layer.handle [as handle_request] (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:280:10)
+    at D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\middleware\auth.middleware.js:46:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2026-01-25 06:32:52 [INFO]: Client connected: 6CzqOxgMr1mZBZkLAABw
+2026-01-25 06:32:52 [INFO]: Socket 6CzqOxgMr1mZBZkLAABw joined emergency room
+2026-01-25 06:32:52 [INFO]: Client disconnected: 6CzqOxgMr1mZBZkLAABw
+2026-01-25 06:33:03 [ERROR]: User role 'doctor' is not authorized to access this route
+Error: User role 'doctor' is not authorized to access this route
+    at D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\middleware\rbac.middleware.js:22:17
+    at Layer.handle [as handle_request] (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:284:15
+    at param (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:365:14)
+    at param (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:421:3)
+    at next (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:280:10)
+2026-01-25 06:33:15 [ERROR]: User role 'doctor' is not authorized to access this route
+Error: User role 'doctor' is not authorized to access this route
+    at D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\middleware\rbac.middleware.js:22:17
+    at Layer.handle [as handle_request] (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:284:15
+    at param (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:365:14)
+    at param (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:421:3)
+    at next (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:280:10)
+2026-01-25 06:33:26 [INFO]: MongoDB Connected: ac-3nlnfep-shard-00-00.fs2fnzl.mongodb.net
+2026-01-25 06:33:26 [INFO]: MongoDB Connected: ac-3nlnfep-shard-00-01.fs2fnzl.mongodb.net
+2026-01-25 06:33:26 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-25 06:33:26 [INFO]:        HOSPITAL INFORMATION SYSTEM (HIS) BACKEND SERVER        
+2026-01-25 06:33:26 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-25 06:33:26 [INFO]: 🚀 Server running in development mode on port 5001
+2026-01-25 06:33:26 [INFO]: 📡 API Base URL: http://localhost:5001/api/v1
+2026-01-25 06:33:26 [INFO]: 🔌 WebSocket enabled
+2026-01-25 06:33:26 [INFO]: 📋 Health check: http://localhost:5001/api/health
+2026-01-25 06:33:26 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-25 06:33:29 [ERROR]: User role 'doctor' is not authorized to access this route
+Error: User role 'doctor' is not authorized to access this route
+    at D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\middleware\rbac.middleware.js:22:17
+    at Layer.handle [as handle_request] (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:284:15
+    at param (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:365:14)
+    at param (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:421:3)
+    at next (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:280:10)
+2026-01-25 06:34:02 [INFO]: Client connected: I0s5PLTKR0ZnFcULAAAC
+2026-01-25 06:34:02 [INFO]: Socket I0s5PLTKR0ZnFcULAAAC joined emergency room
+2026-01-25 06:34:04 [INFO]: Client disconnected: I0s5PLTKR0ZnFcULAAAC
+2026-01-25 06:34:34 [INFO]: MongoDB Connected: ac-3nlnfep-shard-00-00.fs2fnzl.mongodb.net
+2026-01-25 06:34:34 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-25 06:34:34 [INFO]:        HOSPITAL INFORMATION SYSTEM (HIS) BACKEND SERVER        
+2026-01-25 06:34:34 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-25 06:34:34 [INFO]: 🚀 Server running in development mode on port 5001
+2026-01-25 06:34:34 [INFO]: 📡 API Base URL: http://localhost:5001/api/v1
+2026-01-25 06:34:34 [INFO]: 🔌 WebSocket enabled
+2026-01-25 06:34:34 [INFO]: 📋 Health check: http://localhost:5001/api/health
+2026-01-25 06:34:34 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-25 06:34:35 [INFO]: MongoDB Connected: ac-3nlnfep-shard-00-01.fs2fnzl.mongodb.net
+2026-01-25 06:35:11 [ERROR]: User role 'doctor' is not authorized to access this route
+Error: User role 'doctor' is not authorized to access this route
+    at D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\middleware\rbac.middleware.js:22:17
+    at Layer.handle [as handle_request] (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:284:15
+    at param (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:365:14)
+    at param (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:421:3)
+    at next (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:280:10)
+2026-01-25 06:35:13 [ERROR]: User role 'doctor' is not authorized to access this route
+Error: User role 'doctor' is not authorized to access this route
+    at D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\middleware\rbac.middleware.js:22:17
+    at Layer.handle [as handle_request] (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:284:15
+    at param (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:365:14)
+    at param (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:421:3)
+    at next (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:280:10)
+2026-01-25 06:35:14 [ERROR]: User role 'doctor' is not authorized to access this route
+Error: User role 'doctor' is not authorized to access this route
+    at D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\middleware\rbac.middleware.js:22:17
+    at Layer.handle [as handle_request] (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:284:15
+    at param (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:365:14)
+    at param (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:421:3)
+    at next (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:280:10)
+2026-01-25 06:35:20 [ERROR]: User role 'doctor' is not authorized to access this route
+Error: User role 'doctor' is not authorized to access this route
+    at D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\middleware\rbac.middleware.js:22:17
+    at Layer.handle [as handle_request] (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:284:15
+    at param (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:365:14)
+    at param (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:421:3)
+    at next (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:280:10)
+2026-01-25 06:35:54 [INFO]: MongoDB Connected: ac-3nlnfep-shard-00-00.fs2fnzl.mongodb.net
+2026-01-25 06:35:54 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-25 06:35:54 [INFO]:        HOSPITAL INFORMATION SYSTEM (HIS) BACKEND SERVER        
+2026-01-25 06:35:54 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-25 06:35:54 [INFO]: 🚀 Server running in development mode on port 5001
+2026-01-25 06:35:54 [INFO]: 📡 API Base URL: http://localhost:5001/api/v1
+2026-01-25 06:35:54 [INFO]: 🔌 WebSocket enabled
+2026-01-25 06:35:54 [INFO]: 📋 Health check: http://localhost:5001/api/health
+2026-01-25 06:35:54 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-25 06:35:54 [INFO]: MongoDB Connected: ac-3nlnfep-shard-00-00.fs2fnzl.mongodb.net
+2026-01-25 06:36:39 [INFO]: Client connected: 6nkCE6ae1COAzuLOAAAC
+2026-01-25 06:36:39 [INFO]: [ClinicalDashboard] Fetching stats for doctor 6970e6e6ae32f124038cc0a6
+2026-01-25 06:36:39 [INFO]: [ClinicalDashboard] Response: appointments=2, labs=20, critical=5
+2026-01-25 06:36:39 [INFO]: [ClinicalDashboard] Fetching stats for doctor 6970e6e6ae32f124038cc0a6
+2026-01-25 06:36:40 [INFO]: [ClinicalDashboard] Response: appointments=2, labs=20, critical=5
+2026-01-25 06:36:41 [INFO]: Client disconnected: 6nkCE6ae1COAzuLOAAAC
+2026-01-25 06:36:49 [ERROR]: User role 'doctor' is not authorized to access this route
+Error: User role 'doctor' is not authorized to access this route
+    at D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\middleware\rbac.middleware.js:22:17
+    at Layer.handle [as handle_request] (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:284:15
+    at param (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:365:14)
+    at param (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:421:3)
+    at next (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:280:10)
+2026-01-25 06:38:02 [INFO]: Client connected: 2oxMPSkhxOz6s5hOAAAF
+2026-01-25 06:38:02 [INFO]: Socket 2oxMPSkhxOz6s5hOAAAF joined emergency room
+2026-01-25 06:38:03 [INFO]: Client disconnected: 2oxMPSkhxOz6s5hOAAAF
+2026-01-25 06:43:24 [INFO]: [ClinicalDashboard] Fetching stats for doctor 6970e6e6ae32f124038cc0a6
+2026-01-25 06:43:24 [INFO]: Client connected: Y6k1oXasxJCfmbMnAAAI
+2026-01-25 06:43:24 [INFO]: [ClinicalDashboard] Response: appointments=3, labs=20, critical=5
+2026-01-25 06:43:24 [INFO]: [ClinicalDashboard] Fetching stats for doctor 6970e6e6ae32f124038cc0a6
+2026-01-25 06:43:24 [INFO]: [ClinicalDashboard] Response: appointments=3, labs=20, critical=5
+2026-01-25 06:43:27 [INFO]: Client disconnected: Y6k1oXasxJCfmbMnAAAI
+2026-01-25 06:45:24 [ERROR]: Invalid credentials
+Error: Invalid credentials
+    at D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\controllers\auth.controller.js:36:21
+2026-01-25 06:45:30 [ERROR]: Invalid credentials
+Error: Invalid credentials
+    at D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\controllers\auth.controller.js:36:21
+2026-01-25 07:12:21 [INFO]: [ClinicalDashboard] Fetching stats for doctor 6971f193276a5b845b4125aa
+2026-01-25 07:12:21 [INFO]: Client connected: LFJ37ou7Sm0JJKtAAAAL
+2026-01-25 07:12:21 [INFO]: [ClinicalDashboard] Response: appointments=0, labs=0, critical=0
+2026-01-25 07:12:21 [INFO]: [ClinicalDashboard] Fetching stats for doctor 6971f193276a5b845b4125aa
+2026-01-25 07:12:21 [INFO]: [ClinicalDashboard] Response: appointments=0, labs=0, critical=0
+2026-01-25 07:12:42 [INFO]: Client disconnected: LFJ37ou7Sm0JJKtAAAAL
+2026-01-25 07:14:45 [ERROR]: Invalid credentials
+Error: Invalid credentials
+    at D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\controllers\auth.controller.js:36:21
+2026-01-25 07:14:53 [INFO]: [ClinicalDashboard] Fetching stats for doctor 6971f193276a5b845b4125aa
+2026-01-25 07:14:53 [INFO]: Client connected: sAlrgibtuPJ5gMTsAAAO
+2026-01-25 07:14:53 [INFO]: [ClinicalDashboard] Response: appointments=0, labs=0, critical=0
+2026-01-25 07:14:53 [INFO]: [ClinicalDashboard] Fetching stats for doctor 6971f193276a5b845b4125aa
+2026-01-25 07:14:53 [INFO]: [ClinicalDashboard] Response: appointments=0, labs=0, critical=0
+2026-01-25 07:15:54 [INFO]: [ClinicalDashboard] Fetching stats for doctor 6971f193276a5b845b4125aa
+2026-01-25 07:15:54 [INFO]: [ClinicalDashboard] Response: appointments=0, labs=0, critical=0
+2026-01-25 07:16:53 [INFO]: [ClinicalDashboard] Fetching stats for doctor 6971f193276a5b845b4125aa
+2026-01-25 07:16:53 [INFO]: [ClinicalDashboard] Response: appointments=0, labs=0, critical=0
+2026-01-25 07:17:42 [INFO]: Client disconnected: sAlrgibtuPJ5gMTsAAAO
+2026-01-25 07:17:43 [INFO]: [ClinicalDashboard] Fetching stats for doctor 6971f193276a5b845b4125aa
+2026-01-25 07:17:43 [INFO]: Client connected: 80AgD7Mibek_MPRDAAAR
+2026-01-25 07:17:43 [INFO]: [ClinicalDashboard] Response: appointments=0, labs=0, critical=0
+2026-01-25 07:17:43 [INFO]: [ClinicalDashboard] Fetching stats for doctor 6971f193276a5b845b4125aa
+2026-01-25 07:17:44 [INFO]: [ClinicalDashboard] Response: appointments=0, labs=0, critical=0
+2026-01-25 07:17:49 [INFO]: Client disconnected: 80AgD7Mibek_MPRDAAAR
+2026-01-25 07:17:49 [ERROR]: No active shift found
+Error: No active shift found
+    at D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\controllers\nursing.controller.js:202:21
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2026-01-25 07:17:49 [ERROR]: No active shift found
+Error: No active shift found
+    at D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\controllers\nursing.controller.js:202:21
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2026-01-25 07:18:24 [ERROR]: No active shift found
+Error: No active shift found
+    at D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\controllers\nursing.controller.js:202:21
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2026-01-25 07:18:25 [ERROR]: No active shift found
+Error: No active shift found
+    at D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\controllers\nursing.controller.js:202:21
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2026-01-25 07:18:59 [INFO]: Client connected: tdAGYOo24fanfzpbAAAU
+2026-01-25 07:18:59 [INFO]: Socket tdAGYOo24fanfzpbAAAU joined emergency room
+2026-01-25 07:19:01 [INFO]: Client disconnected: tdAGYOo24fanfzpbAAAU
+2026-01-25 07:19:21 [ERROR]: Invalid credentials
+Error: Invalid credentials
+    at D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\controllers\auth.controller.js:36:21
+2026-01-25 07:19:28 [ERROR]: No active shift found
+Error: No active shift found
+    at D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\controllers\nursing.controller.js:202:21
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2026-01-25 07:19:29 [ERROR]: No active shift found
+Error: No active shift found
+    at D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\controllers\nursing.controller.js:202:21
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2026-01-25 07:20:25 [ERROR]: No active shift found
+Error: No active shift found
+    at D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\controllers\nursing.controller.js:202:21
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2026-01-25 07:20:25 [ERROR]: No active shift found
+Error: No active shift found
+    at D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\controllers\nursing.controller.js:202:21
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2026-01-25 07:20:37 [ERROR]: E11000 duplicate key error collection: test.nursingtasks index: taskNumber_1 dup key: { taskNumber: null }
+MongoBulkWriteError: E11000 duplicate key error collection: test.nursingtasks index: taskNumber_1 dup key: { taskNumber: null }
+    at OrderedBulkOperation.handleWriteError (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\mongodb\lib\bulk\common.js:860:22)
+    at resultHandler (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\mongodb\lib\bulk\common.js:350:27)
+    at D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\mongodb\lib\utils.js:297:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2026-01-25 07:23:16 [INFO]: MongoDB Connected: ac-3nlnfep-shard-00-01.fs2fnzl.mongodb.net
+2026-01-25 07:23:16 [INFO]: MongoDB Connected: ac-3nlnfep-shard-00-00.fs2fnzl.mongodb.net
+2026-01-25 07:23:16 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-25 07:23:16 [INFO]:        HOSPITAL INFORMATION SYSTEM (HIS) BACKEND SERVER        
+2026-01-25 07:23:16 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-25 07:23:16 [INFO]: 🚀 Server running in development mode on port 5001
+2026-01-25 07:23:16 [INFO]: 📡 API Base URL: http://localhost:5001/api/v1
+2026-01-25 07:23:16 [INFO]: 🔌 WebSocket enabled
+2026-01-25 07:23:16 [INFO]: 📋 Health check: http://localhost:5001/api/health
+2026-01-25 07:23:16 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-25 07:23:33 [INFO]: MongoDB Connected: ac-3nlnfep-shard-00-00.fs2fnzl.mongodb.net
+2026-01-25 07:23:33 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-25 07:23:33 [INFO]:        HOSPITAL INFORMATION SYSTEM (HIS) BACKEND SERVER        
+2026-01-25 07:23:33 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-25 07:23:33 [INFO]: 🚀 Server running in development mode on port 5001
+2026-01-25 07:23:33 [INFO]: 📡 API Base URL: http://localhost:5001/api/v1
+2026-01-25 07:23:33 [INFO]: 🔌 WebSocket enabled
+2026-01-25 07:23:33 [INFO]: 📋 Health check: http://localhost:5001/api/health
+2026-01-25 07:23:33 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-25 07:23:33 [INFO]: MongoDB Connected: ac-3nlnfep-shard-00-02.fs2fnzl.mongodb.net
+2026-01-25 07:23:48 [INFO]: MongoDB Connected: ac-3nlnfep-shard-00-01.fs2fnzl.mongodb.net
+2026-01-25 07:23:48 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-25 07:23:48 [INFO]:        HOSPITAL INFORMATION SYSTEM (HIS) BACKEND SERVER        
+2026-01-25 07:23:48 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-25 07:23:48 [INFO]: 🚀 Server running in development mode on port 5001
+2026-01-25 07:23:48 [INFO]: 📡 API Base URL: http://localhost:5001/api/v1
+2026-01-25 07:23:48 [INFO]: 🔌 WebSocket enabled
+2026-01-25 07:23:48 [INFO]: 📋 Health check: http://localhost:5001/api/health
+2026-01-25 07:23:48 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-25 07:23:49 [INFO]: MongoDB Connected: ac-3nlnfep-shard-00-01.fs2fnzl.mongodb.net
+2026-01-25 07:24:01 [ERROR]: You already have an active shift. Please end it first.
+Error: You already have an active shift. Please end it first.
+    at D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\controllers\nursing.controller.js:44:21
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2026-01-25 07:24:05 [ERROR]: You already have an active shift. Please end it first.
+Error: You already have an active shift. Please end it first.
+    at D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\controllers\nursing.controller.js:44:21
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2026-01-25 07:25:21 [ERROR]: VitalSigns validation failed: consciousness: `verbal` is not a valid enum value for path `consciousness`.
+ValidationError: VitalSigns validation failed: consciousness: `verbal` is not a valid enum value for path `consciousness`.
+    at Document.invalidate (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\mongoose\lib\document.js:3221:32)
+    at D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\mongoose\lib\document.js:3014:17
+    at D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\mongoose\lib\schematype.js:1368:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:85:11)
+2026-01-25 07:26:30 [INFO]: MongoDB Connected: ac-3nlnfep-shard-00-02.fs2fnzl.mongodb.net
+2026-01-25 07:26:30 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-25 07:26:30 [INFO]:        HOSPITAL INFORMATION SYSTEM (HIS) BACKEND SERVER        
+2026-01-25 07:26:30 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-25 07:26:30 [INFO]: 🚀 Server running in development mode on port 5001
+2026-01-25 07:26:30 [INFO]: 📡 API Base URL: http://localhost:5001/api/v1
+2026-01-25 07:26:30 [INFO]: 🔌 WebSocket enabled
+2026-01-25 07:26:30 [INFO]: 📋 Health check: http://localhost:5001/api/health
+2026-01-25 07:26:30 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-25 07:26:31 [INFO]: MongoDB Connected: ac-3nlnfep-shard-00-00.fs2fnzl.mongodb.net
+2026-01-25 07:27:43 [ERROR]: No active shift found
+Error: No active shift found
+    at D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\controllers\nursing.controller.js:218:21
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2026-01-25 07:27:44 [ERROR]: No active shift found
+Error: No active shift found
+    at D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\controllers\nursing.controller.js:218:21
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2026-01-25 07:28:29 [INFO]: Client connected: 4ocRCwS-LjoJQZDmAAAC
+2026-01-25 07:28:29 [INFO]: [ClinicalDashboard] Fetching stats for doctor 6970e6e6ae32f124038cc0a6
+2026-01-25 07:28:29 [INFO]: [ClinicalDashboard] Response: appointments=3, labs=20, critical=6
+2026-01-25 07:28:29 [INFO]: [ClinicalDashboard] Fetching stats for doctor 6970e6e6ae32f124038cc0a6
+2026-01-25 07:28:29 [INFO]: [ClinicalDashboard] Response: appointments=3, labs=20, critical=6
+2026-01-25 07:28:37 [INFO]: Client disconnected: 4ocRCwS-LjoJQZDmAAAC
+2026-01-25 07:29:04 [ERROR]: CarePlan validation failed: goals.1.priority: `critical` is not a valid enum value for path `priority`.
+ValidationError: CarePlan validation failed: goals.1.priority: `critical` is not a valid enum value for path `priority`.
+    at Document.invalidate (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\mongoose\lib\document.js:3221:32)
+    at Subdocument.invalidate (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\mongoose\lib\types\subdocument.js:229:12)
+    at D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\mongoose\lib\document.js:3014:17
+    at D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\mongoose\lib\schematype.js:1368:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:85:11)
+2026-01-25 07:33:35 [INFO]: MongoDB Connected: ac-3nlnfep-shard-00-00.fs2fnzl.mongodb.net
+2026-01-25 07:33:35 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-25 07:33:35 [INFO]:        HOSPITAL INFORMATION SYSTEM (HIS) BACKEND SERVER        
+2026-01-25 07:33:35 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-25 07:33:35 [INFO]: 🚀 Server running in development mode on port 5001
+2026-01-25 07:33:35 [INFO]: 📡 API Base URL: http://localhost:5001/api/v1
+2026-01-25 07:33:35 [INFO]: 🔌 WebSocket enabled
+2026-01-25 07:33:35 [INFO]: 📋 Health check: http://localhost:5001/api/health
+2026-01-25 07:33:35 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-25 07:33:35 [INFO]: MongoDB Connected: ac-3nlnfep-shard-00-00.fs2fnzl.mongodb.net
+2026-01-25 07:35:11 [INFO]: [ClinicalDashboard] Fetching stats for doctor 6970e6e6ae32f124038cc0a6
+2026-01-25 07:35:11 [INFO]: Client connected: 9DQ6TBaz9xgPXaa5AAAC
+2026-01-25 07:35:11 [INFO]: [ClinicalDashboard] Response: appointments=3, labs=20, critical=6
+2026-01-25 07:35:11 [INFO]: [ClinicalDashboard] Fetching stats for doctor 6970e6e6ae32f124038cc0a6
+2026-01-25 07:35:12 [INFO]: [ClinicalDashboard] Response: appointments=3, labs=20, critical=6
+2026-01-25 07:35:16 [INFO]: Client disconnected: 9DQ6TBaz9xgPXaa5AAAC
+2026-01-25 07:35:26 [ERROR]: CarePlan validation failed: category: `mobility` is not a valid enum value for path `category`.
+ValidationError: CarePlan validation failed: category: `mobility` is not a valid enum value for path `category`.
+    at Document.invalidate (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\mongoose\lib\document.js:3221:32)
+    at D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\mongoose\lib\document.js:3014:17
+    at D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\mongoose\lib\schematype.js:1368:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:85:11)
+2026-01-25 07:35:29 [ERROR]: CarePlan validation failed: category: `mobility` is not a valid enum value for path `category`.
+ValidationError: CarePlan validation failed: category: `mobility` is not a valid enum value for path `category`.
+    at Document.invalidate (D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\mongoose\lib\document.js:3221:32)
+    at D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\mongoose\lib\document.js:3014:17
+    at D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\node_modules\mongoose\lib\schematype.js:1368:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:85:11)
+2026-01-25 07:36:14 [INFO]: MongoDB Connected: ac-3nlnfep-shard-00-02.fs2fnzl.mongodb.net
+2026-01-25 07:36:14 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-25 07:36:14 [INFO]:        HOSPITAL INFORMATION SYSTEM (HIS) BACKEND SERVER        
+2026-01-25 07:36:14 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-25 07:36:14 [INFO]: 🚀 Server running in development mode on port 5001
+2026-01-25 07:36:14 [INFO]: 📡 API Base URL: http://localhost:5001/api/v1
+2026-01-25 07:36:14 [INFO]: 🔌 WebSocket enabled
+2026-01-25 07:36:14 [INFO]: 📋 Health check: http://localhost:5001/api/health
+2026-01-25 07:36:14 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-25 07:36:14 [INFO]: MongoDB Connected: ac-3nlnfep-shard-00-00.fs2fnzl.mongodb.net
+2026-01-25 07:36:53 [WARN]: MongoDB disconnected. Attempting to reconnect...
+2026-01-25 07:37:00 [INFO]: MongoDB reconnected
+2026-01-25 07:37:16 [INFO]: Client connected: HBWwewlIa_PTcsLZAAAC
+2026-01-25 07:37:16 [INFO]: [ClinicalDashboard] Fetching stats for doctor 6970e6e6ae32f124038cc0a6
+2026-01-25 07:37:17 [INFO]: [ClinicalDashboard] Response: appointments=3, labs=20, critical=6
+2026-01-25 07:37:17 [INFO]: [ClinicalDashboard] Fetching stats for doctor 6970e6e6ae32f124038cc0a6
+2026-01-25 07:37:17 [INFO]: [ClinicalDashboard] Response: appointments=3, labs=20, critical=6
+2026-01-25 07:38:16 [INFO]: [ClinicalDashboard] Fetching stats for doctor 6970e6e6ae32f124038cc0a6
+2026-01-25 07:38:17 [INFO]: [ClinicalDashboard] Response: appointments=3, labs=20, critical=6
+2026-01-25 07:39:16 [INFO]: [ClinicalDashboard] Fetching stats for doctor 6970e6e6ae32f124038cc0a6
+2026-01-25 07:39:17 [INFO]: [ClinicalDashboard] Response: appointments=3, labs=20, critical=6
+2026-01-25 07:40:16 [INFO]: [ClinicalDashboard] Fetching stats for doctor 6970e6e6ae32f124038cc0a6
+2026-01-25 07:40:16 [INFO]: [ClinicalDashboard] Response: appointments=3, labs=20, critical=6
+2026-01-25 07:41:22 [WARN]: MongoDB disconnected. Attempting to reconnect...
+2026-01-25 07:41:52 [ERROR]: Not authorized to access this route
+Error: Not authorized to access this route
+    at D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\middleware\auth.middleware.js:48:21
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2026-01-25 07:42:46 [ERROR]: Not authorized to access this route
+Error: Not authorized to access this route
+    at D:\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\middleware\auth.middleware.js:48:21
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at runNextTicks (node:internal/process/task_queues:69:3)
+    at process.processTimers (node:internal/timers:526:9)
+2026-01-25 07:42:57 [INFO]: MongoDB reconnected
+2026-01-25 07:43:16 [INFO]: [ClinicalDashboard] Fetching stats for doctor 6970e6e6ae32f124038cc0a6
+2026-01-25 07:43:17 [INFO]: [ClinicalDashboard] Response: appointments=3, labs=20, critical=6
+2026-01-25 07:44:26 [INFO]: [ClinicalDashboard] Fetching stats for doctor 6970e6e6ae32f124038cc0a6
+2026-01-25 07:44:27 [INFO]: [ClinicalDashboard] Response: appointments=3, labs=20, critical=6
+2026-01-25 07:45:27 [INFO]: [ClinicalDashboard] Fetching stats for doctor 6970e6e6ae32f124038cc0a6
+2026-01-25 07:45:28 [INFO]: [ClinicalDashboard] Response: appointments=3, labs=20, critical=6
+2026-01-25 07:46:31 [INFO]: [ClinicalDashboard] Fetching stats for doctor 6970e6e6ae32f124038cc0a6
+2026-01-25 07:46:46 [INFO]: [ClinicalDashboard] Response: appointments=3, labs=20, critical=6
+2026-01-25 07:47:32 [INFO]: [ClinicalDashboard] Fetching stats for doctor 6970e6e6ae32f124038cc0a6
+2026-01-25 07:47:44 [INFO]: [ClinicalDashboard] Response: appointments=3, labs=20, critical=6
+2026-01-25 07:48:33 [INFO]: [ClinicalDashboard] Fetching stats for doctor 6970e6e6ae32f124038cc0a6
+2026-01-25 07:48:49 [INFO]: [ClinicalDashboard] Response: appointments=3, labs=20, critical=6
+2026-01-25 07:49:34 [INFO]: [ClinicalDashboard] Fetching stats for doctor 6970e6e6ae32f124038cc0a6
+2026-01-25 07:49:46 [INFO]: [ClinicalDashboard] Response: appointments=3, labs=20, critical=6
+2026-01-25 07:50:36 [INFO]: [ClinicalDashboard] Fetching stats for doctor 6970e6e6ae32f124038cc0a6
+2026-01-25 07:50:51 [INFO]: [ClinicalDashboard] Response: appointments=3, labs=20, critical=6
+2026-01-25 07:51:33 [INFO]: [ClinicalDashboard] Fetching stats for doctor 6970e6e6ae32f124038cc0a6
+2026-01-25 07:51:33 [INFO]: [ClinicalDashboard] Response: appointments=3, labs=20, critical=6
+2026-01-25 07:52:34 [INFO]: [ClinicalDashboard] Fetching stats for doctor 6970e6e6ae32f124038cc0a6
+2026-01-25 07:52:35 [INFO]: [ClinicalDashboard] Response: appointments=3, labs=20, critical=6
+2026-01-25 07:53:35 [INFO]: [ClinicalDashboard] Fetching stats for doctor 6970e6e6ae32f124038cc0a6
+2026-01-25 07:53:36 [INFO]: [ClinicalDashboard] Response: appointments=3, labs=20, critical=6
+2026-01-25 07:54:36 [INFO]: [ClinicalDashboard] Fetching stats for doctor 6970e6e6ae32f124038cc0a6
+2026-01-25 07:54:37 [INFO]: [ClinicalDashboard] Response: appointments=3, labs=20, critical=6
+2026-01-25 07:55:37 [INFO]: [ClinicalDashboard] Fetching stats for doctor 6970e6e6ae32f124038cc0a6
+2026-01-25 07:55:38 [INFO]: [ClinicalDashboard] Response: appointments=3, labs=20, critical=6
+2026-01-25 07:56:38 [INFO]: [ClinicalDashboard] Fetching stats for doctor 6970e6e6ae32f124038cc0a6
+2026-01-25 07:56:38 [INFO]: [ClinicalDashboard] Response: appointments=3, labs=20, critical=6
+2026-01-25 07:57:39 [INFO]: [ClinicalDashboard] Fetching stats for doctor 6970e6e6ae32f124038cc0a6
+2026-01-25 07:57:40 [INFO]: [ClinicalDashboard] Response: appointments=3, labs=20, critical=6
+2026-01-25 07:58:40 [INFO]: [ClinicalDashboard] Fetching stats for doctor 6970e6e6ae32f124038cc0a6
+2026-01-25 07:58:41 [INFO]: [ClinicalDashboard] Response: appointments=3, labs=20, critical=6
+2026-01-25 07:59:41 [INFO]: [ClinicalDashboard] Fetching stats for doctor 6970e6e6ae32f124038cc0a6
+2026-01-25 07:59:42 [INFO]: [ClinicalDashboard] Response: appointments=3, labs=20, critical=6
+2026-01-25 08:00:42 [INFO]: [ClinicalDashboard] Fetching stats for doctor 6970e6e6ae32f124038cc0a6
+2026-01-25 08:00:43 [INFO]: [ClinicalDashboard] Response: appointments=3, labs=20, critical=6
+2026-01-25 08:01:44 [INFO]: [ClinicalDashboard] Fetching stats for doctor 6970e6e6ae32f124038cc0a6
+2026-01-25 08:01:48 [INFO]: [ClinicalDashboard] Response: appointments=3, labs=20, critical=6
+2026-01-25 10:13:22 [INFO]: MongoDB Connected: ac-3nlnfep-shard-00-02.fs2fnzl.mongodb.net
+2026-01-25 10:13:22 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-25 10:13:22 [INFO]:        HOSPITAL INFORMATION SYSTEM (HIS) BACKEND SERVER        
+2026-01-25 10:13:22 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-25 10:13:22 [INFO]: 🚀 Server running in development mode on port 5001
+2026-01-25 10:13:22 [INFO]: 📡 API Base URL: http://localhost:5001/api/v1
+2026-01-25 10:13:22 [INFO]: 🔌 WebSocket enabled
+2026-01-25 10:13:22 [INFO]: 📋 Health check: http://localhost:5001/api/health
+2026-01-25 10:13:22 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-25 10:14:22 [INFO]: Client connected: RPPCFrKKwaJpdlsuAAAC
+2026-01-25 10:14:23 [INFO]: User 6970e6e6ae32f124038cc0aa joined personal room
+2026-01-25 10:14:23 [INFO]: [ReceptionistDashboard] Fetching stats for date range: 2026-01-25T00:00:00.000Z to 2026-01-26T00:00:00.000Z
+2026-01-25 10:14:23 [INFO]: [ReceptionistDashboard] Registrations today: 5, Total patients: 46
+2026-01-25 10:14:23 [INFO]: [ReceptionistDashboard] Fetching stats for date range: 2026-01-25T00:00:00.000Z to 2026-01-26T00:00:00.000Z
+2026-01-25 10:14:23 [INFO]: [ReceptionistDashboard] Registrations today: 5, Total patients: 46
+2026-01-25 10:14:28 [INFO]: Client disconnected: RPPCFrKKwaJpdlsuAAAC
+2026-01-25 10:25:12 [INFO]: AI OCR Service: Sending image for extraction - captured_id.jpg
+2026-01-25 10:25:24 [INFO]: AI OCR Service: Extraction successful - Confidence: high
+2026-01-25 10:25:46 [INFO]: Client connected: fnULIMZI-d_puE2QAAAF
+2026-01-25 10:25:46 [INFO]: [ClinicalDashboard] Fetching stats for doctor 6970e6e6ae32f124038cc0a6
+2026-01-25 10:25:47 [INFO]: [ClinicalDashboard] Response: appointments=3, labs=20, critical=6
+2026-01-25 10:25:47 [INFO]: [ClinicalDashboard] Fetching stats for doctor 6970e6e6ae32f124038cc0a6
+2026-01-25 10:25:47 [INFO]: [ClinicalDashboard] Response: appointments=3, labs=20, critical=6
+2026-01-25 10:25:52 [INFO]: Client disconnected: fnULIMZI-d_puE2QAAAF
+2026-01-25 10:26:00 [ERROR]: AI summary failed: LLM API failed: User not found.
+Error: AI summary failed: LLM API failed: User not found.
+    at C:\Users\yashd\OneDrive\Desktop\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\controllers\lab.controller.js:456:21
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
