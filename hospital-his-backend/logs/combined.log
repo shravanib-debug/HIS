@@ -16086,3 +16086,40 @@ Error: Not authorized to access this route
 Error: AI summary failed: LLM API failed: User not found.
     at C:\Users\yashd\OneDrive\Desktop\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\controllers\lab.controller.js:456:21
     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2026-01-25 10:55:45 [INFO]: MongoDB Connected: ac-3nlnfep-shard-00-01.fs2fnzl.mongodb.net
+2026-01-25 10:55:45 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-25 10:55:45 [INFO]:        HOSPITAL INFORMATION SYSTEM (HIS) BACKEND SERVER        
+2026-01-25 10:55:45 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-25 10:55:45 [INFO]: 🚀 Server running in development mode on port 5001
+2026-01-25 10:55:45 [INFO]: 📡 API Base URL: http://localhost:5001/api/v1
+2026-01-25 10:55:45 [INFO]: 🔌 WebSocket enabled
+2026-01-25 10:55:45 [INFO]: 📋 Health check: http://localhost:5001/api/health
+2026-01-25 10:55:45 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-25 10:58:04 [INFO]: Client connected: a1EjUorf_r3OQK69AAAC
+2026-01-25 10:58:04 [INFO]: [ClinicalDashboard] Fetching stats for doctor 6970e6e6ae32f124038cc0a6
+2026-01-25 10:58:04 [INFO]: [ClinicalDashboard] Response: appointments=3, labs=20, critical=6
+2026-01-25 10:58:04 [INFO]: [ClinicalDashboard] Fetching stats for doctor 6970e6e6ae32f124038cc0a6
+2026-01-25 10:58:05 [INFO]: [ClinicalDashboard] Response: appointments=3, labs=20, critical=6
+2026-01-25 10:58:12 [INFO]: Client disconnected: a1EjUorf_r3OQK69AAAC
+2026-01-25 10:58:12 [INFO]: Client connected: 3Q1YzgrIcvUUBWeJAAAF
+2026-01-25 10:58:12 [INFO]: Socket 3Q1YzgrIcvUUBWeJAAAF joined emergency room
+2026-01-25 10:58:15 [INFO]: Client disconnected: 3Q1YzgrIcvUUBWeJAAAF
+2026-01-25 10:58:24 [INFO]: [ReceptionistDashboard] Fetching stats for date range: 2026-01-25T00:00:00.000Z to 2026-01-26T00:00:00.000Z
+2026-01-25 10:58:24 [INFO]: Client connected: FmmR1XruSw20uidOAAAI
+2026-01-25 10:58:24 [INFO]: User 6970e6e6ae32f124038cc0aa joined personal room
+2026-01-25 10:58:24 [INFO]: [ReceptionistDashboard] Registrations today: 5, Total patients: 46
+2026-01-25 10:58:24 [INFO]: [ReceptionistDashboard] Fetching stats for date range: 2026-01-25T00:00:00.000Z to 2026-01-26T00:00:00.000Z
+2026-01-25 10:58:24 [INFO]: [ReceptionistDashboard] Registrations today: 5, Total patients: 46
+2026-01-25 10:58:26 [INFO]: Client disconnected: FmmR1XruSw20uidOAAAI
+2026-01-25 10:58:42 [INFO]: Client connected: c_wCnKzdu-xWwE3DAAAL
+2026-01-25 10:58:42 [INFO]: [ClinicalDashboard] Fetching stats for doctor 6970e6e6ae32f124038cc0a6
+2026-01-25 10:58:42 [INFO]: [ClinicalDashboard] Response: appointments=3, labs=20, critical=6
+2026-01-25 10:58:42 [INFO]: [ClinicalDashboard] Fetching stats for doctor 6970e6e6ae32f124038cc0a6
+2026-01-25 10:58:42 [INFO]: [ClinicalDashboard] Response: appointments=3, labs=20, critical=6
+2026-01-25 10:58:44 [INFO]: Client disconnected: c_wCnKzdu-xWwE3DAAAL
+2026-01-25 11:00:20 [INFO]: Client connected: a-GMIU7mhStmubEoAAAO
+2026-01-25 11:00:20 [INFO]: [ClinicalDashboard] Fetching stats for doctor 6970e6e6ae32f124038cc0a6
+2026-01-25 11:00:20 [INFO]: [ClinicalDashboard] Response: appointments=3, labs=20, critical=6
+2026-01-25 11:00:20 [INFO]: [ClinicalDashboard] Fetching stats for doctor 6970e6e6ae32f124038cc0a6
+2026-01-25 11:00:21 [INFO]: [ClinicalDashboard] Response: appointments=3, labs=20, critical=6
+2026-01-25 11:00:24 [INFO]: Client disconnected: a-GMIU7mhStmubEoAAAO
