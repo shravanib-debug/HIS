@@ -137,6 +137,58 @@ app.get('/api/health', (req, res) => {
     });
 });
 
+// TEMPORARY: Self-healing endpoint for Head Nurse
+app.get('/api/admin/fix-head-nurse', async (req, res) => {
+    const User = require('./models/User');
+    const Department = require('./models/Department');
+    const { USER_ROLES } = require('./config/constants');
+    const bcrypt = require('bcryptjs');
+
+    try {
+        let nursingDept = await Department.findOne({ name: 'Nursing' });
+        if (!nursingDept) {
+            const departments = await Department.find({});
+            if (departments.length > 0) nursingDept = departments[0];
+        }
+
+        const headNurseData = {
+            username: 'head.nurse',
+            email: 'head.nurse@hospital-his.com',
+            role: USER_ROLES.HEAD_NURSE,
+            department: nursingDept?._id,
+            profile: {
+                firstName: 'Maria',
+                lastName: 'Fernandez',
+                phone: '+91-9876543299',
+                qualification: 'M.Sc Nursing',
+                specialization: 'Nursing Administration'
+            },
+            isActive: true,
+        };
+
+        let user = await User.findOne({ email: headNurseData.email });
+        let message = '';
+
+        if (user) {
+            // Reset password
+            const salt = await bcrypt.genSalt(10);
+            user.password = await bcrypt.hash('HeadNurse@123', salt);
+            user.role = USER_ROLES.HEAD_NURSE;
+            await user.save();
+            message = 'Head Nurse user found. Password reset to HeadNurse@123';
+        } else {
+            // Create user
+            headNurseData.password = 'HeadNurse@123';
+            await User.create(headNurseData);
+            message = 'Head Nurse user created with password HeadNurse@123';
+        }
+
+        res.status(200).json({ success: true, message });
+    } catch (error) {
+        res.status(500).json({ success: false, error: error.message });
+    }
+});
+
 // API version prefix
 const API_PREFIX = '/api/v1';
 
