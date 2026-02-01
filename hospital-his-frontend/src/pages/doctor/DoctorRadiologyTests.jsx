@@ -3,8 +3,9 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { ScanLine, Eye, X, FileText, Image, RefreshCw, Shield, Loader, CheckCircle } from 'lucide-react';
 import axios from 'axios';
 import toast from 'react-hot-toast';
+import { API_BASE_URL, API_ROOT_URL } from '../../config/api';
 
-const API_URL = 'http://localhost:5001/api/v1/';
+const API_URL = API_BASE_URL + '/';
 const getConfig = () => {
     const user = JSON.parse(localStorage.getItem('user'));
     return { headers: { Authorization: `Bearer ${user?.token}` } };
@@ -88,7 +89,7 @@ const DoctorRadiologyTests = () => {
             const imagePath = selectedTest.scanImage.startsWith('/')
                 ? selectedTest.scanImage
                 : '/' + selectedTest.scanImage;
-            return `http://localhost:5001${imagePath}`;
+            return `${API_ROOT_URL}${imagePath}`;
         }
         return null;
     };
@@ -98,7 +99,7 @@ const DoctorRadiologyTests = () => {
             const reportPath = selectedTest.reportUrl.startsWith('/')
                 ? selectedTest.reportUrl
                 : '/' + selectedTest.reportUrl;
-            return `http://localhost:5001${reportPath}`;
+            return `${API_ROOT_URL}${reportPath}`;
         }
         return null;
     };
