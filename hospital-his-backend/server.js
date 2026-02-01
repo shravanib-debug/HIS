@@ -164,6 +164,7 @@ app.get('/api/admin/fix-head-nurse', async (req, res) => {
                 specialization: 'Nursing Administration'
             },
             isActive: true,
+            accountStatus: 'active'
         };
 
         let user = await User.findOne({ email: headNurseData.email });
@@ -174,18 +175,54 @@ app.get('/api/admin/fix-head-nurse', async (req, res) => {
             // assign plain text, let User model hash it
             user.password = 'HeadNurse@123';
             user.role = USER_ROLES.HEAD_NURSE;
+            user.isActive = true;
+            user.accountStatus = 'active';
             await user.save();
-            message = 'Head Nurse user found. Password reset to HeadNurse@123';
+            message = 'Head Nurse user found. Password reset to HeadNurse@123 and activated.';
         } else {
             // Create user
             headNurseData.password = 'HeadNurse@123';
             await User.create(headNurseData);
-            message = 'Head Nurse user created with password HeadNurse@123';
+            message = 'Head Nurse user created with password HeadNurse@123 and activated.';
         }
 
         res.status(200).json({ success: true, message });
     } catch (error) {
         res.status(500).json({ success: false, error: error.message });
+    }
+});
+
+// TEMPORARY: Debug Login Endpoint
+app.get('/api/admin/test-login', async (req, res) => {
+    const User = require('./models/User');
+    const { email, password } = req.query;
+
+    if (!email || !password) {
+        return res.json({ error: 'Please provide ?email=...&password=... in URL' });
+    }
+
+    try {
+        const user = await User.findOne({ email }).select('+password');
+
+        if (!user) {
+            return res.json({ result: 'User NOT found in database', email });
+        }
+
+        const isMatch = await user.comparePassword(password);
+
+        res.json({
+            result: isMatch ? 'SUCCESS: Password Matches' : 'FAILURE: Password Mismatch',
+            user: {
+                id: user._id,
+                email: user.email,
+                role: user.role,
+                isActive: user.isActive,
+                accountStatus: user.accountStatus,
+            },
+            passwordMatch: isMatch
+        });
+    } catch (err) {
+        res.json({ error: err.message });
     }
 });
 
