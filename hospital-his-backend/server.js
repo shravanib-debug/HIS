@@ -170,9 +170,9 @@ app.get('/api/admin/fix-head-nurse', async (req, res) => {
         let message = '';
 
         if (user) {
-            // Reset password
-            const salt = await bcrypt.genSalt(10);
-            user.password = await bcrypt.hash('HeadNurse@123', salt);
+            // Reset password - Check if model has pre-save hook (it does)
+            // assign plain text, let User model hash it
+            user.password = 'HeadNurse@123';
             user.role = USER_ROLES.HEAD_NURSE;
             await user.save();
             message = 'Head Nurse user found. Password reset to HeadNurse@123';
