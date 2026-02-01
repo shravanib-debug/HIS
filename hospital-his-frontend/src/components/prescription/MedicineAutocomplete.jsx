@@ -50,12 +50,13 @@ const MedicineAutocomplete = ({
         try {
             const result = await searchMedicines(query, 15);
             setSuggestions(result.data || []);
-            setIsOpen(result.data?.length > 0);
+            setIsOpen(true); // Always show dropdown after search, even if empty
             setSelectedIndex(-1);
         } catch (err) {
             console.error('Medicine search error:', err);
             setError('Failed to load medicines');
             setSuggestions([]);
+            setIsOpen(true); // Show error message
         } finally {
             setIsLoading(false);
         }

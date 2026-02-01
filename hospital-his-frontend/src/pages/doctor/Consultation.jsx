@@ -578,10 +578,12 @@ const Consultation = () => {
                         initial={{ opacity: 0, scale: 0.95, y: 20 }}
                         animate={{ opacity: 1, scale: 1, y: 0 }}
                         transition={{ duration: 0.5, delay: 0.1, type: "spring" }}
-                        className="bg-gradient-to-br from-emerald-100 to-green-50 p-8 rounded-2xl shadow-md border border-emerald-200 relative overflow-hidden"
+                        className="bg-gradient-to-br from-emerald-100 to-green-50 p-8 rounded-2xl shadow-md border border-emerald-200 relative"
                     >
-                        {/* Rx Watermark */}
-                        <div className="absolute top-4 right-4 text-emerald-900/5 font-serif text-9xl leading-none select-none pointer-events-none">Rx</div>
+                        {/* Rx Watermark - Wrapped to prevent overflow but allow dropdown */}
+                        <div className="absolute inset-0 overflow-hidden rounded-2xl pointer-events-none">
+                            <div className="absolute top-4 right-4 text-emerald-900/5 font-serif text-9xl leading-none select-none">Rx</div>
+                        </div>
 
                         <h3 className="font-bold text-emerald-800 mb-6 flex items-center gap-2 text-xl relative z-10">
                             <div className="p-2 bg-white rounded-lg shadow-sm text-emerald-600">
