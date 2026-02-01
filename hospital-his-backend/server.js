@@ -85,6 +85,9 @@ app.use(helmet({
     crossOriginResourcePolicy: { policy: 'cross-origin' },
 }));
 
+// Enable trust proxy for Render/Vercel (fixes rate limit warnings)
+app.set('trust proxy', 1);
+
 // CORS
 app.use(cors({
     origin: config.corsOrigins,
