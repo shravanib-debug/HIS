@@ -16123,3 +16123,78 @@ Error: AI summary failed: LLM API failed: User not found.
 2026-01-25 11:00:20 [INFO]: [ClinicalDashboard] Fetching stats for doctor 6970e6e6ae32f124038cc0a6
 2026-01-25 11:00:21 [INFO]: [ClinicalDashboard] Response: appointments=3, labs=20, critical=6
 2026-01-25 11:00:24 [INFO]: Client disconnected: a-GMIU7mhStmubEoAAAO
+2026-01-27 01:19:42 [INFO]: MongoDB Connected: ac-3nlnfep-shard-00-02.fs2fnzl.mongodb.net
+2026-01-27 01:19:42 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-27 01:19:42 [INFO]:        HOSPITAL INFORMATION SYSTEM (HIS) BACKEND SERVER        
+2026-01-27 01:19:42 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-27 01:19:42 [INFO]: 🚀 Server running in development mode on port 5001
+2026-01-27 01:19:42 [INFO]: 📡 API Base URL: http://localhost:5001/api/v1
+2026-01-27 01:19:42 [INFO]: 🔌 WebSocket enabled
+2026-01-27 01:19:42 [INFO]: 📋 Health check: http://localhost:5001/api/health
+2026-01-27 01:19:42 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-27 01:35:18 [INFO]: Client connected: mkAHa0BzuShPFX-sAAAC
+2026-01-27 01:35:18 [INFO]: [ClinicalDashboard] Fetching stats for doctor 6970e6e6ae32f124038cc0a6
+2026-01-27 01:35:19 [INFO]: [ClinicalDashboard] Response: appointments=1, labs=20, critical=9
+2026-01-27 01:35:19 [INFO]: [ClinicalDashboard] Fetching stats for doctor 6970e6e6ae32f124038cc0a6
+2026-01-27 01:35:19 [INFO]: [ClinicalDashboard] Response: appointments=1, labs=20, critical=9
+2026-01-27 01:35:31 [INFO]: Client disconnected: mkAHa0BzuShPFX-sAAAC
+2026-01-27 01:42:10 [INFO]: Client connected: GKv_1GpEPVN6_BZhAAAF
+2026-01-27 01:42:10 [INFO]: [ClinicalDashboard] Fetching stats for doctor 6970e6e6ae32f124038cc0a6
+2026-01-27 01:42:11 [INFO]: [ClinicalDashboard] Response: appointments=1, labs=20, critical=9
+2026-01-27 01:42:11 [INFO]: [ClinicalDashboard] Fetching stats for doctor 6970e6e6ae32f124038cc0a6
+2026-01-27 01:42:11 [INFO]: [ClinicalDashboard] Response: appointments=1, labs=20, critical=9
+2026-01-27 01:42:17 [INFO]: Client disconnected: GKv_1GpEPVN6_BZhAAAF
+2026-01-27 01:51:02 [INFO]: Client connected: e-Mec43f6tDapJ7jAAAI
+2026-01-27 01:51:02 [INFO]: [ClinicalDashboard] Fetching stats for doctor 6970e6e6ae32f124038cc0a6
+2026-01-27 01:51:03 [INFO]: [ClinicalDashboard] Response: appointments=1, labs=20, critical=9
+2026-01-27 01:51:03 [INFO]: [ClinicalDashboard] Fetching stats for doctor 6970e6e6ae32f124038cc0a6
+2026-01-27 01:51:04 [INFO]: [ClinicalDashboard] Response: appointments=1, labs=20, critical=9
+2026-01-27 01:51:04 [INFO]: Client disconnected: e-Mec43f6tDapJ7jAAAI
+2026-01-27 02:06:08 [INFO]: Client connected: zzV_xGwbXcmItf9JAAAL
+2026-01-27 02:06:08 [INFO]: [ClinicalDashboard] Fetching stats for doctor 6970e6e6ae32f124038cc0a6
+2026-01-27 02:06:09 [INFO]: [ClinicalDashboard] Response: appointments=1, labs=20, critical=9
+2026-01-27 02:06:09 [INFO]: [ClinicalDashboard] Fetching stats for doctor 6970e6e6ae32f124038cc0a6
+2026-01-27 02:06:11 [INFO]: [ClinicalDashboard] Response: appointments=1, labs=20, critical=9
+2026-01-27 02:06:15 [INFO]: Client disconnected: zzV_xGwbXcmItf9JAAAL
+2026-01-27 02:15:29 [INFO]: Client connected: HMNYWYzfJiayY_KjAAAO
+2026-01-27 02:15:29 [INFO]: [ClinicalDashboard] Fetching stats for doctor 6970e6e6ae32f124038cc0a6
+2026-01-27 02:15:30 [INFO]: [ClinicalDashboard] Response: appointments=1, labs=20, critical=9
+2026-01-27 02:15:31 [INFO]: [ClinicalDashboard] Fetching stats for doctor 6970e6e6ae32f124038cc0a6
+2026-01-27 02:15:32 [INFO]: [ClinicalDashboard] Response: appointments=1, labs=20, critical=9
+2026-01-27 02:15:34 [INFO]: Client disconnected: HMNYWYzfJiayY_KjAAAO
+2026-01-27 02:16:18 [INFO]: Client connected: h7gks4a-ldFDjTuSAAAR
+2026-01-27 02:16:18 [INFO]: [ClinicalDashboard] Fetching stats for doctor 6970e6e6ae32f124038cc0a6
+2026-01-27 02:16:20 [INFO]: [ClinicalDashboard] Response: appointments=1, labs=20, critical=9
+2026-01-27 02:16:20 [INFO]: [ClinicalDashboard] Fetching stats for doctor 6970e6e6ae32f124038cc0a6
+2026-01-27 02:16:22 [INFO]: [ClinicalDashboard] Response: appointments=1, labs=20, critical=9
+2026-01-27 02:16:23 [INFO]: Client disconnected: h7gks4a-ldFDjTuSAAAR
+2026-01-27 02:16:52 [INFO]: Client connected: e8CxQQMJgmo0EbT0AAAU
+2026-01-27 02:16:53 [INFO]: [ClinicalDashboard] Fetching stats for doctor 6970e6e6ae32f124038cc0a6
+2026-01-27 02:16:54 [INFO]: [ClinicalDashboard] Response: appointments=1, labs=20, critical=9
+2026-01-27 02:16:54 [INFO]: [ClinicalDashboard] Fetching stats for doctor 6970e6e6ae32f124038cc0a6
+2026-01-27 02:16:55 [INFO]: [ClinicalDashboard] Response: appointments=1, labs=20, critical=9
+2026-01-27 02:16:55 [INFO]: Client disconnected: e8CxQQMJgmo0EbT0AAAU
+2026-01-27 02:17:36 [INFO]: Client connected: suRAmMXnsb6b-mxMAAAX
+2026-01-27 02:17:36 [INFO]: Socket suRAmMXnsb6b-mxMAAAX joined emergency room
+2026-01-27 02:17:38 [INFO]: Client disconnected: suRAmMXnsb6b-mxMAAAX
+2026-01-27 02:18:13 [INFO]: Client connected: ki3VBF2QHgEUVcEqAAAa
+2026-01-27 02:18:13 [INFO]: [ClinicalDashboard] Fetching stats for doctor 6970e6e6ae32f124038cc0a6
+2026-01-27 02:18:14 [INFO]: [ClinicalDashboard] Response: appointments=1, labs=20, critical=9
+2026-01-27 02:18:14 [INFO]: [ClinicalDashboard] Fetching stats for doctor 6970e6e6ae32f124038cc0a6
+2026-01-27 02:18:14 [INFO]: Client disconnected: ki3VBF2QHgEUVcEqAAAa
+2026-01-27 02:18:15 [INFO]: [ClinicalDashboard] Response: appointments=1, labs=20, critical=9
+2026-01-27 02:29:53 [INFO]: MongoDB Connected: ac-3nlnfep-shard-00-01.fs2fnzl.mongodb.net
+2026-01-27 02:29:53 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-27 02:29:53 [INFO]:        HOSPITAL INFORMATION SYSTEM (HIS) BACKEND SERVER        
+2026-01-27 02:29:53 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-27 02:29:53 [INFO]: 🚀 Server running in development mode on port 5001
+2026-01-27 02:29:53 [INFO]: 📡 API Base URL: http://localhost:5001/api/v1
+2026-01-27 02:29:53 [INFO]: 🔌 WebSocket enabled
+2026-01-27 02:29:53 [INFO]: 📋 Health check: http://localhost:5001/api/health
+2026-01-27 02:29:53 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-27 02:31:59 [INFO]: Client connected: pixHqhPLKkzcMtpGAAAC
+2026-01-27 02:31:59 [INFO]: [ClinicalDashboard] Fetching stats for doctor 6970e6e6ae32f124038cc0a6
+2026-01-27 02:31:59 [INFO]: [ClinicalDashboard] Response: appointments=1, labs=20, critical=9
+2026-01-27 02:31:59 [INFO]: [ClinicalDashboard] Fetching stats for doctor 6970e6e6ae32f124038cc0a6
+2026-01-27 02:32:00 [INFO]: [ClinicalDashboard] Response: appointments=1, labs=20, critical=9
+2026-01-27 02:32:01 [INFO]: Client disconnected: pixHqhPLKkzcMtpGAAAC

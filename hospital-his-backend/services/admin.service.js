@@ -293,7 +293,7 @@ exports.bulkUpdateSystemConfig = async (configs, adminId) => {
 exports.initializeDefaultConfigs = async (adminId) => {
     const defaults = [
         // Hospital Info
-        { key: 'hospital_name', value: 'HIS Quasar Hospital', category: 'hospital_info', dataType: 'string' },
+        { key: 'hospital_name', value: 'LifelineX Hospital', category: 'hospital_info', dataType: 'string' },
         { key: 'hospital_address', value: '', category: 'hospital_info', dataType: 'string' },
         { key: 'hospital_phone', value: '', category: 'hospital_info', dataType: 'string' },
         { key: 'hospital_email', value: '', category: 'hospital_info', dataType: 'string' },

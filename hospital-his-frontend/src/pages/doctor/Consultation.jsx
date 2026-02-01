@@ -444,9 +444,9 @@ const Consultation = () => {
                         initial={{ opacity: 0, scale: 0.95, y: 20 }}
                         animate={{ opacity: 1, scale: 1, y: 0 }}
                         transition={{ duration: 0.5, type: "spring" }}
-                        className={`p-8 rounded-2xl shadow-sm border relative overflow-hidden ${inputMode === 'write'
-                            ? 'bg-gradient-to-br from-emerald-50 to-teal-50 border-emerald-200'
-                            : 'bg-cyan-50 border-cyan-100'
+                        className={`p-8 rounded-2xl shadow-md border relative overflow-hidden ${inputMode === 'write'
+                            ? 'bg-gradient-to-br from-emerald-200 to-teal-100 border-emerald-300'
+                            : 'bg-gradient-to-br from-cyan-200 to-sky-100 border-cyan-300'
                             }`}
                         style={inputMode === 'type' ? {
                             backgroundImage: 'linear-gradient(#14b8a61a 1px, transparent 1px)',
@@ -577,7 +577,7 @@ const Consultation = () => {
                         initial={{ opacity: 0, scale: 0.95, y: 20 }}
                         animate={{ opacity: 1, scale: 1, y: 0 }}
                         transition={{ duration: 0.5, delay: 0.1, type: "spring" }}
-                        className="bg-emerald-50 p-8 rounded-2xl shadow-sm border border-emerald-100 relative overflow-hidden"
+                        className="bg-gradient-to-br from-emerald-100 to-green-50 p-8 rounded-2xl shadow-md border border-emerald-200 relative overflow-hidden"
                     >
                         {/* Rx Watermark */}
                         <div className="absolute top-4 right-4 text-emerald-900/5 font-serif text-9xl leading-none select-none pointer-events-none">Rx</div>
@@ -695,7 +695,7 @@ const Consultation = () => {
                         initial={{ opacity: 0, scale: 0.95, y: 20 }}
                         animate={{ opacity: 1, scale: 1, y: 0 }}
                         transition={{ duration: 0.5, delay: 0.2, type: "spring" }}
-                        className="bg-blue-50 p-8 rounded-2xl shadow-sm border border-blue-100 relative overflow-hidden"
+                        className="bg-gradient-to-br from-blue-100 to-sky-50 p-8 rounded-2xl shadow-md border border-blue-200 relative overflow-hidden"
                     >
                         {/* Lab Watermark */}
                         <div className="absolute top-4 right-4 text-blue-900/5 font-serif text-7xl leading-none select-none pointer-events-none">🧪</div>
@@ -767,7 +767,7 @@ const Consultation = () => {
                         initial={{ opacity: 0, scale: 0.95, y: 20 }}
                         animate={{ opacity: 1, scale: 1, y: 0 }}
                         transition={{ duration: 0.5, delay: 0.25, type: "spring" }}
-                        className="bg-violet-50 p-8 rounded-2xl shadow-sm border border-violet-100 relative overflow-hidden"
+                        className="bg-gradient-to-br from-violet-100 to-purple-50 p-8 rounded-2xl shadow-md border border-violet-200 relative overflow-hidden"
                     >
                         {/* Radiology Watermark */}
                         <div className="absolute top-4 right-4 text-violet-900/5 font-serif text-7xl leading-none select-none pointer-events-none">📷</div>

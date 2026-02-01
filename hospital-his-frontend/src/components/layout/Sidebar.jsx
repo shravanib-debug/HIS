@@ -348,7 +348,7 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
                         <div className="w-8 h-8 rounded-lg bg-primary flex items-center justify-center text-white mr-3">
                             <Activity size={18} />
                         </div>
-                        <span className="font-bold text-lg text-textPrimary tracking-tight">HIS Quasar</span>
+                        <span className="font-bold text-lg text-textPrimary tracking-tight">LifelineX</span>
                         <button onClick={toggleSidebar} className="ml-auto md:hidden text-textSecondary">
                             <X size={20} />
                         </button>
@@ -397,7 +397,7 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
                         </button>
 
                         <div className="text-xs text-center text-textSecondary">
-                            v1.0.0 • HIS Quasar
+                            v1.0.0 • LifelineX
                         </div>
                     </div>
                 </div>

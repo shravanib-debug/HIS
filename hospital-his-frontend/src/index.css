@@ -6,6 +6,21 @@ html {
   scroll-behavior: smooth;
 }
 
+/* Perspective utilities for 3D transforms */
+.perspective-\[1200px\] {
+  perspective: 1200px;
+}
+
+.rotate-y-\[-3deg\] {
+  --tw-rotate-y: -3deg;
+  transform: rotateY(var(--tw-rotate-y));
+}
+
+.rotate-x-\[2deg\] {
+  --tw-rotate-x: 2deg;
+  transform: rotateX(var(--tw-rotate-x));
+}
+
 @layer base {
   :root {
     /* WARM LIGHT THEME */
