@@ -86,12 +86,23 @@ exports.addMedicine = asyncHandler(async (req, res, next) => {
     }
 
     if (!medicine) {
-        const formValue = (category || 'tablet').toLowerCase();
+        // Frontend sends "Category" as "Tablet", "Syrup" etc. which are actually Forms.
+        // We need to map this to the correct schema fields.
+        const inputCategory = category || 'Tablet';
+
+        // Check if the input matches a valid FORM (Tablet, Capsule, etc.)
+        const validForms = ['Tablet', 'Capsule', 'Syrup', 'Injection', 'Cream', 'Ointment', 'Drops', 'Inhaler', 'Powder', 'Gel', 'Patch', 'Suspension', 'Other'];
+        let noteForm = validForms.includes(inputCategory) ? inputCategory : 'Tablet';
+
+        // If the category from frontend was actually a Form, we set generic Category to 'Other'
+        // unless we want to try to map it to a therapeutic class (complex without more input).
+        let noteCategory = 'Other';
+
         medicine = await Medicine.create({
             name,
             genericName,
-            category: category || 'General',
-            form: formValue,
+            category: noteCategory,
+            form: noteForm,
             strength,
             unit,
             mrp: mrp || sellingRate,
