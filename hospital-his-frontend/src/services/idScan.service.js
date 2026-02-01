@@ -78,7 +78,7 @@ const scanIdCard = async (imageFile) => {
  */
 const checkServiceAvailability = async () => {
     try {
-        const response = await axios.get('http://localhost:8000/health', {
+        const response = await axios.get(`${API_BASE_URL}/health`, {
             timeout: 3000
         });
         return response.data.status === 'healthy';

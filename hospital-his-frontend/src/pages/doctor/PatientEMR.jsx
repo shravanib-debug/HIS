@@ -20,7 +20,9 @@ import {
 } from 'lucide-react';
 import RiskScoreChart from '../../components/charts/RiskScoreChart';
 
-const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:5001/api/v1';
+import { API_BASE_URL, API_ROOT_URL } from '../../config/api';
+
+const API_URL = API_BASE_URL;
 
 const PatientEMR = () => {
     const { patientId } = useParams();
@@ -435,7 +437,7 @@ const PatientEMR = () => {
                                     })()}
                                     {lt.reportPdf && (
                                         <a
-                                            href={`http://localhost:5001/${lt.reportPdf}`}
+                                            href={`${API_ROOT_URL}/${lt.reportPdf}`}
                                             target="_blank"
                                             rel="noopener noreferrer"
                                             className="inline-flex items-center gap-1 mt-2 text-primary text-sm hover:underline"
