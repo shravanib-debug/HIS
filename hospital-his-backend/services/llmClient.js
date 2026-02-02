@@ -100,8 +100,17 @@ RESPOND IN THIS EXACT JSON FORMAT (no markdown, just raw JSON):
     } catch (error) {
         console.error('[LLM] OpenRouter API error:', error.response?.data || error.message);
 
+        // Fallback to mock summary on auth error or "User not found" to prevent UI crash
+        const errorMsg = error.response?.data?.error?.message || error.message;
+        if (error.response?.status === 401 || error.response?.status === 402 || errorMsg.includes('User not found')) {
+            console.warn('[LLM] API Key invalid or account issue. Returning mock summary.');
+            const mock = getMockSummary();
+            mock.clinicalRecommendation = `[SYSTEM NOTE: OpenRouter API Key is invalid or expired. This is a generated placeholder summary.]`;
+            return mock;
+        }
+
         // Return error info for debugging
-        throw new Error(`LLM API failed: ${error.response?.data?.error?.message || error.message}`);
+        throw new Error(`LLM API failed: ${errorMsg}`);
     }
 };
 
