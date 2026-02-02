@@ -81,7 +81,21 @@ const extractIdDetails = async (imageBuffer, filename, mimetype) => {
 
         if (error.response) {
             // Server responded with error
-            throw new Error(error.response.data?.detail || 'AI service error');
+            const errorData = error.response.data;
+            let errorMessage = 'AI service error';
+
+            if (typeof errorData === 'object' && errorData.detail) {
+                errorMessage = errorData.detail;
+            } else if (typeof errorData === 'string') {
+                // Should capture HTML response text which might contain "502 Bad Gateway" etc
+                // Limit length to avoid massive logs
+                errorMessage = `AI Service Error: ${errorData.substring(0, 100)}`;
+            } else if (error.response.statusText) {
+                errorMessage = `AI Service Error: ${error.response.status} ${error.response.statusText}`;
+            }
+
+            logger.error(`AI Service Response Error: ${JSON.stringify(errorData).substring(0, 200)}`);
+            throw new Error(errorMessage);
         }
 
         throw error;
